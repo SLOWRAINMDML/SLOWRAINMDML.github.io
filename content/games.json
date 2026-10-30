@@ -64,6 +64,7 @@
    "cover": "assets/games/tactics-devil-dungeon/cover.webp",
    "poster": "assets/games/tactics-devil-dungeon/poster.webp",
    "hero": "assets/games/tactics-devil-dungeon/hero.webp",
+   "heroFocus": "80% 50%",
    "gallery": [
     "assets/games/tactics-devil-dungeon/shot-1.webp",
     "assets/games/tactics-devil-dungeon/shot-2.webp",
@@ -76,8 +77,14 @@
     "assets/games/tactics-devil-dungeon/shot-9.webp"
    ],
    "videos": [
-    "assets/games/tactics-devil-dungeon/tactics-battle-action.mp4",
-    "assets/games/tactics-devil-dungeon/tactics-tactical-movement.mp4"
+    {
+     "src": "assets/games/tactics-devil-dungeon/clip-1.mp4",
+     "poster": "assets/games/tactics-devil-dungeon/clip-1.webp"
+    },
+    {
+     "src": "assets/games/tactics-devil-dungeon/clip-2.mp4",
+     "poster": "assets/games/tactics-devil-dungeon/clip-2.webp"
+    }
    ]
   },
   {

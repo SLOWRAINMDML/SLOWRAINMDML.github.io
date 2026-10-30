@@ -160,7 +160,7 @@ function renderSlides() {
   $("#slides").innerHTML = slides.map((game, i) => `
     <article class="slide${i === state.current ? " active" : ""}" role="group" aria-roledescription="slide"
       aria-label="${i + 1} / ${slides.length}: ${esc(pick(game.title))}" ${i === state.current ? "" : 'aria-hidden="true"'}>
-      <img class="slide-art" src="${esc(game.hero || game.cover)}" alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+      <img class="slide-art" src="${esc(game.hero || game.cover)}" alt=""${game.heroFocus ? ` style="object-position:${esc(game.heroFocus)}"` : ""} ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
       <div class="slide-content">
         <p class="badge-row">${badges(game)}</p>
         ${game.logo
@@ -202,11 +202,19 @@ function showSlide(index, focusTab) {
     bar.style.animation = "none";
     void bar.offsetWidth;
     bar.style.animation = "";
-    if (active && focusTab) tab.focus();
-    if (active) tab.scrollIntoView({ block: "nearest", inline: "nearest", behavior: reducedMotion.matches ? "auto" : "smooth" });
+    if (active && focusTab) tab.focus({ preventScroll: true });
+    if (active) centerTab(tab);
   });
   $("#slide-current").textContent = String(state.current + 1).padStart(2, "0");
   schedule();
+}
+
+// Scroll only the tab strip sideways. scrollIntoView() would also scroll the page,
+// pulling a reader back to the top whenever the slideshow advanced.
+function centerTab(tab) {
+  const strip = $("#slide-tabs");
+  const delta = tab.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - tab.offsetWidth) / 2;
+  strip.scrollBy({ left: delta, behavior: reducedMotion.matches ? "auto" : "smooth" });
 }
 
 function schedule() {
@@ -346,8 +354,8 @@ function bindFilters() {
 
 function media(game) {
   const items = [];
-  if (game.platform === "steam") items.push({ type: "img", src: game.hero });
-  (game.videos || []).forEach(src => items.push({ type: "video", src }));
+  if (game.platform === "steam") items.push({ type: "img", src: game.cover });
+  (game.videos || []).forEach(video => items.push({ type: "video", src: video.src, poster: video.poster }));
   (game.gallery || []).forEach(src => items.push({ type: "img", src }));
   return items;
 }
@@ -355,7 +363,7 @@ function media(game) {
 function showMedia(items, index) {
   const item = items[index];
   $("#dialog-stage").innerHTML = item.type === "video"
-    ? `<video src="${esc(item.src)}" autoplay muted loop playsinline></video>`
+    ? `<video src="${esc(item.src)}" poster="${esc(item.poster || "")}" autoplay muted loop playsinline></video>`
     : `<img src="${esc(item.src)}" alt="">`;
   $$("#dialog-thumbs button").forEach((btn, i) => btn.setAttribute("aria-current", String(i === index)));
 }
@@ -364,7 +372,7 @@ function fillDialog(game) {
   const items = media(game);
   $("#dialog-thumbs").innerHTML = items.length > 1 ? items.map((item, i) => `
     <button type="button" data-media="${i}" class="${item.type === "video" ? "is-video" : ""}" aria-label="${i + 1} / ${items.length}">
-      ${item.type === "video" ? `<video src="${esc(item.src)}" muted preload="metadata"></video>` : `<img src="${esc(item.src)}" alt="" loading="lazy">`}
+      <img src="${esc(item.poster || item.src)}" alt="" loading="lazy">
     </button>`).join("") : "";
   showMedia(items, 0);
   $("#dialog-thumbs").onclick = event => {

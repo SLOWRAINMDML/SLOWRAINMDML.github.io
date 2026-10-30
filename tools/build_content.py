@@ -6,13 +6,16 @@ APIs, as do the icon and every store thumbnail. Featured Roblox games also get a
 1920px hero picked from the private game repo (assets/store/thumb_*.png), when a
 GitHub token is available from `git credential fill`.
 
-The Steam game uses the local store media in SRPG_STD (see STEAM_MEDIA below).
+The Steam game takes its capsule, screenshots and clips from the live store page, and its
+banner/poster from the same in-game renders as the store header (SRPG_STD tools, local only).
 
     python3 tools/build_content.py            # everything
     python3 tools/build_content.py --no-hero  # skip the GitHub hero step
 """
+import importlib.util
 import io
 import json
+import re
 import subprocess
 import sys
 import time
@@ -26,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "content" / "catalog.json"
 OUT = ROOT / "content" / "games.json"
 MEDIA = ROOT / "assets" / "games"
-STEAM_MEDIA = Path.home() / "project/SRPG_STD/output/release/2026-10-13-steam-media"
+SRPG = Path.home() / "project/SRPG_STD"
 UA = {"User-Agent": "slowrain-games-site/1.0"}
 
 
@@ -185,29 +188,61 @@ def build_roblox(games, featured, token):
     return out
 
 
+def steam_ingame_art(folder):
+    """Banner, poster and logo from the same in-game renders as the live Steam header/main capsule.
+
+    Uses SRPG_STD's tools/build_steam_header_ingame_20261014.py (voxel castle backdrop + Adrian/Sarah
+    render, night grade, pixel logo). No painted key art."""
+    spec = importlib.util.spec_from_file_location("ingame", SRPG / "tools/build_steam_header_ingame_20261014.py")
+    ingame = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(ingame)
+    renders = SRPG / "output/release/2026-10-14-steam-capsules/render/header_noai"
+    castle = Image.open(renders / "castle_backdrop.png").convert("RGB")
+    party = Image.open(renders / "party_h2.png").convert("RGBA")
+    party = ingame.night_grade(party.crop(party.getbbox()))
+
+    place_logo = ingame.caps.place_logo
+    ingame.caps.place_logo = lambda img, *args, **kwargs: img.convert("RGB")  # the page draws its own title
+    try:
+        hero = ingame.header(castle, party, size=(1920, 872), castle_cx=1560, party_h=760, party_cx=1300, cut=0.12)
+    finally:
+        ingame.caps.place_logo = place_logo
+    poster = ingame.header(castle, party, size=(748, 896), castle_cx=470, party_h=640, party_cx=390, cut=0.1,
+                           logo_box=(0.07, 0.05, 0.93, 0.3))
+    logo = ingame.caps.logo("pixel", 1100)
+    logo.save(folder / "logo.webp", "WEBP", quality=92, method=6)
+    return (save_webp(hero, folder / "hero.webp", 1920, 82), save_webp(poster, folder / "poster.webp", 748, 86),
+            (folder / "logo.webp").relative_to(ROOT).as_posix())
+
+
 def build_steam(g):
+    """Steam game: capsule, screenshots and description clips straight from the live store page."""
     print(g["id"])
     folder = MEDIA / g["id"]
+    for old in folder.glob("*"):
+        old.unlink()
+    folder.mkdir(parents=True, exist_ok=True)
     app = g["steamAppId"]
     details = {}
     for lang, code in (("ko", "korean"), ("en", "english")):
         details[lang] = get(f"https://store.steampowered.com/api/appdetails?appids={app}&l={code}")[str(app)]["data"]
+    page = get(f"https://store.steampowered.com/app/{app}/?l=english",
+               {"Cookie": "birthtime=0; wants_mature_content=1"}, raw=True).decode("utf-8", "replace")
 
-    caps = STEAM_MEDIA / "capsules"
-    hero = save_webp(crop_ratio(Image.open(caps / "library-hero.jpg"), 2.2, 0.6), folder / "hero.webp", 1920, 80)
-    logo = folder / "logo.webp"
-    Image.open(caps / "library-logo.png").save(logo, "WEBP", quality=90, method=6, lossless=False)
-    cover = save_webp(Image.open(caps / "main.png"), folder / "cover.webp", 900, 84)
-    poster = save_webp(Image.open(caps / "vertical.png"), folder / "poster.webp", 748, 84)
-    gallery = [save_webp(Image.open(p), folder / f"shot-{i}.webp", 1280, 80)
-               for i, p in enumerate(sorted((STEAM_MEDIA / "screenshots").glob("*.png")), 1)]
+    capsule = re.search(r'https://[^"\' ]+/apps/%d/[0-9a-f]+/capsule_616x353\.jpg' % app, page).group(0)
+    cover = save_webp(Image.open(io.BytesIO(get(capsule.replace(".jpg", "_2x.jpg"), raw=True))), folder / "cover.webp", 1232, 84)
+    gallery = [save_webp(Image.open(io.BytesIO(get(s["path_full"], raw=True))), folder / f"shot-{i}.webp", 1280, 82)
+               for i, s in enumerate(details["en"]["screenshots"], 1)]
     videos = []
-    for name in ("tactics-battle-action", "tactics-tactical-movement"):
-        src = STEAM_MEDIA / "description" / f"{name}.mp4"
-        if src.exists():
-            dst = folder / f"{name}.mp4"
-            dst.write_bytes(src.read_bytes())
-            videos.append(dst.relative_to(ROOT).as_posix())
+    for i, url in enumerate(dict.fromkeys(re.findall(r'https://[^"\' ]+/apps/%d/extras/[0-9a-f]+\.mp4' % app, page)), 1):
+        dst = folder / f"clip-{i}.mp4"
+        dst.write_bytes(get(url, raw=True))
+        poster = dst.with_suffix(".webp")
+        frame = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", "1", "-i", str(dst), "-frames:v", "1",
+                                "-f", "image2pipe", "-vcodec", "png", "-"], capture_output=True, check=True).stdout
+        save_webp(Image.open(io.BytesIO(frame)), poster, 640, 80)
+        videos.append({"src": dst.relative_to(ROOT).as_posix(), "poster": poster.relative_to(ROOT).as_posix()})
+    hero, poster, logo = steam_ingame_art(folder)
 
     return {
         "id": g["id"],
@@ -221,10 +256,11 @@ def build_steam(g):
         "facts": g["facts"],
         "url": f"https://store.steampowered.com/app/{app}/",
         "icon": None,
-        "logo": logo.relative_to(ROOT).as_posix(),
+        "logo": logo,
         "cover": cover,
         "poster": poster,
         "hero": hero,
+        "heroFocus": "80% 50%",
         "gallery": gallery,
         "videos": videos,
     }
