@@ -1,0 +1,735 @@
+{
+ "featured": [
+  "tactics-devil-dungeon",
+  "lantern-troupe",
+  "sky-bounty",
+  "galaxy-bounty",
+  "burp-orchestra",
+  "moldy-pets-lab",
+  "road-home"
+ ],
+ "games": [
+  {
+   "id": "tactics-devil-dungeon",
+   "platform": "steam",
+   "title": {
+    "ko": "Tactics to the devil dungeon",
+    "en": "Tactics to the devil dungeon"
+   },
+   "tagline": {
+    "ko": "사거리·고저차·지형이 승패를 가르는 다크 판타지 턴제 전술 RPG",
+    "en": "A dark fantasy turn-based tactics RPG where range, elevation and terrain decide the fight"
+   },
+   "description": {
+    "ko": "저마다 시그니처를 지닌 동료들로 파티를 꾸리고 클래스와 스킬을 키워, 사거리·고저차·지형이 승패를 가르는 다크 판타지 턴제 전술 RPG에서 이동과 공격을 한 수씩 선택하세요.",
+    "en": "Build a party of companions who each carry a signature, shape their classes and skills, then choose every move and attack in a dark fantasy turn-based tactical RPG where range, elevation and terrain decide the fight."
+   },
+   "highlights": {
+    "ko": [
+     "전투 100개와 이야기 2개로 이어지는 102개 스테이지 캠페인, 마을 15곳",
+     "동료 106명, 클래스가 아니라 사람에게 속한 저마다의 시그니처",
+     "61개 클래스와 8개 스킬 트리로 찾는 성장 경로",
+     "불이 번지고, 물이 적시고, 얼음이 길을 막는 지형과 상태이상 연계"
+    ],
+    "en": [
+     "A 102-stage campaign of 100 battles and two story scenes, with 15 towns along the way",
+     "106 companions, each with a signature that belongs to the person, not the class",
+     "61 classes and eight skill trees to build each companion's path",
+     "Fire spreads, water soaks, ice blocks the route: terrain and status effects chain together"
+    ]
+   },
+   "tags": [
+    "tactics",
+    "story"
+   ],
+   "status": {
+    "ko": "2027년 출시 예정",
+    "en": "Coming 2027"
+   },
+   "facts": {
+    "ko": [
+     "Windows (PC)",
+     "한국어 · English · 日本語 · 简体中文",
+     "싱글 플레이"
+    ],
+    "en": [
+     "Windows (PC)",
+     "Korean · English · Japanese · Simplified Chinese",
+     "Single-player"
+    ]
+   },
+   "url": "https://store.steampowered.com/app/5391060/",
+   "icon": null,
+   "logo": "assets/games/tactics-devil-dungeon/logo.webp",
+   "cover": "assets/games/tactics-devil-dungeon/cover.webp",
+   "poster": "assets/games/tactics-devil-dungeon/poster.webp",
+   "hero": "assets/games/tactics-devil-dungeon/hero.webp",
+   "gallery": [
+    "assets/games/tactics-devil-dungeon/shot-1.webp",
+    "assets/games/tactics-devil-dungeon/shot-2.webp",
+    "assets/games/tactics-devil-dungeon/shot-3.webp",
+    "assets/games/tactics-devil-dungeon/shot-4.webp",
+    "assets/games/tactics-devil-dungeon/shot-5.webp",
+    "assets/games/tactics-devil-dungeon/shot-6.webp",
+    "assets/games/tactics-devil-dungeon/shot-7.webp",
+    "assets/games/tactics-devil-dungeon/shot-8.webp",
+    "assets/games/tactics-devil-dungeon/shot-9.webp"
+   ],
+   "videos": [
+    "assets/games/tactics-devil-dungeon/tactics-battle-action.mp4",
+    "assets/games/tactics-devil-dungeon/tactics-tactical-movement.mp4"
+   ]
+  },
+  {
+   "id": "lantern-troupe",
+   "platform": "roblox",
+   "title": {
+    "ko": "등불극단: 세 번 울리는 종",
+    "en": "THE LANTERN TROUPE: The Thrice-Rung Bell"
+   },
+   "tagline": {
+    "ko": "세 번 울리는 종의 비밀을 쫓는 유랑극단 이야기",
+    "en": "A travelling troupe follows the secret of the thrice-rung bell"
+   },
+   "description": {
+    "ko": "비 내리는 산길 끝, 손님이 끊긴 낡은 유랑극단이 알프스 광산 마을 글로켄탈에 도착해요. 밤마다 폐광의 종이 세 번 울리면, 오래전 사고로 돌아오지 못한 광부들의 푸른 그림자가 마을로 내려와요.\n\n당신은 극단의 새 단장! 검극 배우 로사, 악사 멜로, 인형사 토비, 무대장치사 그레타와 함께 마을 사람들의 엇갈린 이야기를 듣고, 단원들의 재주로 단서를 모아요.\n- 톱니 자물쇠를 열고, 오르간 악보의 선율을 되살리고, 꼬마 기사 인형 핀을 좁은 바위 틈으로 보내요\n- 폐광 안에서 등불과 노래, 미끼 인형, 막기로 그림자를 달래며 찢긴 기록을 찾아요 (혼자 또는 친구와 함께)\n- 종을 부술지, 유가족과 작별 의식을 열지, 공개 공연으로 진실을 알릴지 직접 정해요\n- 장면을 골라 공연을 꾸미고, 돌발 상황에 대처해요. 흥행과 사건 해결은 따로 평가돼요\n- 컷신과 그림책 같은 연출로 펼쳐지는 이야기, 세 가지 결말\n- 끝난 뒤에도 거리 공연 리듬 게임, 마차 꾸미기, 작은 사건, 폐광의 메아리가 기다려요\n\n무서운 장면 없이 따뜻한 이야기예요. 휴대폰과 PC 모두 즐길 수 있어요.",
+    "en": "At the end of a rainy mountain road, a worn-out travelling troupe reaches Glockental, an alpine mining village. Every night the old mine's bell rings three times, and the pale blue shadows of miners who never came home walk down into the village.\n\nYou are the troupe's new leader! With Rosa, Melo, Toby and Greta, hear the villagers' conflicting stories and gather clues with the troupe's talents.\n- Open a gear lock, revive an old organ melody, send the puppet knight Pin into a narrow crack\n- In the old mine, calm the shadows with your lantern, songs, a decoy puppet and a guard (solo or with friends)\n- Decide: break the bell, hold a farewell rite, or reveal the truth on stage\n- Build your show from scenes and handle surprises; box office and resolution are judged apart\n- Cut scenes, storybook pages and three endings\n- Then: street show rhythm game, wagon upgrades, little cases\n\nA warm story with nothing scary, on phone and PC."
+   },
+   "tags": [
+    "story",
+    "adventure"
+   ],
+   "players": 12,
+   "released": "2026-10-18",
+   "url": "https://www.roblox.com/games/125399513722362",
+   "icon": "assets/games/lantern-troupe/icon.webp",
+   "cover": "assets/games/lantern-troupe/shot-1.webp",
+   "hero": "assets/games/lantern-troupe/hero.webp",
+   "gallery": [
+    "assets/games/lantern-troupe/shot-1.webp",
+    "assets/games/lantern-troupe/shot-2.webp",
+    "assets/games/lantern-troupe/shot-3.webp",
+    "assets/games/lantern-troupe/shot-4.webp",
+    "assets/games/lantern-troupe/shot-5.webp"
+   ]
+  },
+  {
+   "id": "galaxy-bounty",
+   "platform": "roblox",
+   "title": {
+    "ko": "은하 현상금 우주선",
+    "en": "GALAXY BOUNTY STARSHIPS"
+   },
+   "tagline": {
+    "ko": "반짝이는 은하를 누비며 우주 해적을 쫓아라!",
+    "en": "Chase space pirates across a bright, colourful galaxy!"
+   },
+   "description": {
+    "ko": "반짝이는 은하를 내 우주선으로 누비며 도망치는 우주 해적선을 쫓아요! 궤도를 바꿔 각도를 잡는 우주 현상금 사냥.\n\n은하 정거장에서 출항해 소행성 기지 사이를 날아다니고, 수리 위성 고리에 배를 세워 고치고, 내려서 걸어 다닐 수 있어요. 누구나 소행성 기지를 하나씩 가지고 집, 태양광 풍차, 정원, 천문대로 꾸밀 수 있고, 다른 조종사의 기지에 날아가서 구경도 해요.\n\n현상금을 받으면 먼 현상금 구역까지 직접 날아가 싸워요. 우주는 궤도가 다섯 층으로 나뉘어 있어서, 위아래로 오르내리며 적의 약한 면을 노리고 예고된 레이저는 궤도를 바꿔 피해요. 장비 네 칸으로 궤도 도약, 유성 강하, 별매 드론, 방향 보호막, 중력 그물, 성운 연막 같은 싸움 방식을 정해요.\n\n도주선을 제압하면 옆에 붙어 추적자를 건너보내고, 체포하는 동안 지켜 준 뒤, 착륙대에서 다시 태우면 현상금 성공. 아무도 다치지 않아요. 진 배는 반짝이는 연기를 내며 백기를 흔들어요.\n\n하루 두 번, 한국 시간 낮 열두 시와 저녁 여덟 시에 거대한 우주 해적 거함이 정거장으로 쳐들어와요! 근처로 날아가면 자동으로 함께 싸우고, 막아 내면 별진주와 희귀 알을 받아요.\n\n처음이면 튜토리얼이 출항부터 첫 현상금까지 차근차근 알려 줘요. 조작은 스틱 위가 전진, 좌우가 방향, 위로 아래로 버튼이 궤도예요.",
+    "en": "Fly your own starship across a bright, colourful galaxy and chase runaway space pirates!\n\nLaunch from the Star Port, hop between asteroid bases and park in a repair satellite ring to patch up. Everyone gets a personal asteroid base to build on with cabins, solar windmills, gardens and an observatory. Visit other pilots' bases too.\n\nTake a bounty and fly out to a far bounty zone to fight. Space has five orbit lanes: climb and dive to reach each ship's weak side, and switch lanes to dodge warned laser fire. Four gear slots decide how you fight.\n\nSubdue the runaway, pull up beside it to send your tracker across, guard the arrest, then pick your tracker up from a landing pad. Beaten ships just wave a white flag.\n\nTwice a day, at noon and eight in the evening Korea time, a giant pirate dreadnought attacks the Star Port. Fly in to join the fight and win Star Pearls and a rare egg.\n\nNew pilots get a step by step tutorial from launch to the first bounty."
+   },
+   "tags": [
+    "adventure",
+    "action"
+   ],
+   "players": 200,
+   "released": "2026-10-17",
+   "url": "https://www.roblox.com/games/120958892028671",
+   "icon": "assets/games/galaxy-bounty/icon.webp",
+   "cover": "assets/games/galaxy-bounty/shot-1.webp",
+   "hero": "assets/games/galaxy-bounty/hero.webp",
+   "gallery": [
+    "assets/games/galaxy-bounty/shot-1.webp",
+    "assets/games/galaxy-bounty/shot-2.webp",
+    "assets/games/galaxy-bounty/shot-3.webp",
+    "assets/games/galaxy-bounty/shot-4.webp",
+    "assets/games/galaxy-bounty/shot-5.webp"
+   ]
+  },
+  {
+   "id": "silly-house",
+   "platform": "roblox",
+   "title": {
+    "ko": "집은 지었는데요?!",
+    "en": "Build a Silly House"
+   },
+   "tagline": {
+    "ko": "집은 쉽게, 검사는 엉뚱하게!",
+    "en": "Easy building, silly inspections!"
+   },
+   "description": {
+    "ko": "집은 쉽게, 검사는 엉뚱하게! 삐뚤빼뚤 마을의 새내기 건축가가 되어 주민들의 이상한 주문대로 집을 지어 보세요.\n\n바닥판, 벽, 지붕을 톡톡 붙이면 집이 완성돼요. 칠하기로 좋아하는 색을 고르고, 꾸미기로 침대와 소파를 놓아요. 다 지었으면 초인종을 눌러 입주 검사를 받아요.\n\n그런데 검사관들이 조금 이상해요. 문을 열었더니 앞벽이 통째로 열리고, 작은 비구름이 지붕을 시험하고, 거대한 강아지 뭉치가 지붕 위에서 낮잠을 자요. 굴뚝에서는 팝콘이 펑펑, 예의 바른 유령 부인은 부드러운 커튼 문만 좋아해요.\n\n잘 지어도 웃기고, 조금 실수해도 웃겨요. 집은 절대 부서지지 않고, 표시된 곳만 고쳐서 다시 부르면 돼요. 검사는 언제나 무료!\n\n주문을 끝내면 코인으로 새 부품 세트, 가구, 집 도면을 모아요. 마음에 드는 집은 설계 보관함에 저장해 두고 언제든 다시 지어요.\n\n친구와 함께 짓기, 이웃 집에 도장 찍기, 하루 여러 번 열리는 별사탕 축제, 멀리서도 보이는 건축가 등급까지. 단계별 튜토리얼이 처음부터 차근차근 알려 줘요.",
+    "en": "Easy building, silly inspections! Become the new builder of Wobbly Town and build houses for its odd residents.\n\nSnap floors, walls and roofs together, PAINT your favourite colours, place beds and sofas with DECOR, then ring the doorbell for the move-in inspection.\n\nThe inspectors are a little strange. The front door opens and the whole wall swings open with it. A tiny rain cloud tests your roof. Mungchi the giant puppy naps on top of your house. Popcorn shoots out of the chimney, and a polite ghost only likes curtain doors.\n\nHouses never break: fix the marked spot and call again. Inspections are always free.\n\nFinish orders for coins, collect piece sets, furniture and blueprints, and save the houses you love.\n\nBuild with friends, stamp your neighbours' houses, catch star candy at the festival and show off a builder rank everyone can see. A step-by-step tutorial teaches you everything."
+   },
+   "tags": [
+    "cozy",
+    "puzzle"
+   ],
+   "players": 16,
+   "released": "2026-10-14",
+   "url": "https://www.roblox.com/games/126888997151936",
+   "icon": "assets/games/silly-house/icon.webp",
+   "cover": "assets/games/silly-house/shot-1.webp",
+   "hero": "assets/games/silly-house/shot-1.webp",
+   "gallery": [
+    "assets/games/silly-house/shot-1.webp",
+    "assets/games/silly-house/shot-2.webp",
+    "assets/games/silly-house/shot-3.webp",
+    "assets/games/silly-house/shot-4.webp"
+   ]
+  },
+  {
+   "id": "road-home",
+   "platform": "roblox",
+   "title": {
+    "ko": "길 위의 작은 집",
+    "en": "Little Home on the Road"
+   },
+   "tagline": {
+    "ko": "마음에 드는 곳이 곧 집이 되는 캠핑카 여행",
+    "en": "A camper-van journey where anywhere you like becomes home"
+   },
+   "description": {
+    "ko": "세상에 돌아갈 집은 없어졌지만, 이제는 마음에 드는 곳이 집이 돼요.\n\n큰 도시들은 조용히 사라지고 자연이 그 자리를 채운 세계. 작은 캠핑카 한 대를 받아 지도 없이 길을 떠나요. 멈춘 풍력 발전기가 서 있는 고원, 하늘을 비추는 거울 호수, 실처럼 가는 해안길 끝의 작은 해변, 구름 위 산꼭대기 초원, 덩굴이 덮은 옛 휴양지. 길잡이는 창밖 풍경뿐이에요.\n\n마음에 드는 곳에 차를 세우고 어닝과 의자를 펼치고, 캠핑 요리를 만들고, 사진을 찍어 여행자 SNS에 올려요. 좋아요는 골드가 되고, 골드로 램프와 화분, 침대와 난로를 사서 차 안을 나만의 집으로 꾸며요. 창밖은 정말 차를 세운 그 자리예요.\n\n시간이 흐르고 해가 뜨고 지며 비와 안개와 바람이 찾아와요. 같은 호수도 비 오는 밤에는 전혀 다른 곳이 돼요. 친구에게 함께 타자고 부탁하고, 길에서 만난 배낭 여행자를 캠핑장까지 태워 줄 수도 있어요.\n\n캠핑장 게시판의 사진 부탁, 여행 목표와 배지, 큰 캠핑카가 기다리는 차고. 전투도 추격도 없는 느긋한 여행이에요.\n\n조작: 왼쪽 스틱이나 WASD로 운전하고 걸어요. 오른쪽 아래 버튼으로 운전, 주차, 캠핑, 요리, 사진, 꾸미기를 해요.",
+    "en": "The big cities are gone, but a home can be anywhere you like.\n\nNature has grown back everywhere. Take your little camper van and set off without a map: green hills with still wind turbines, a calm lake like a mirror, a narrow road by the sea down to a tiny beach, a grassy mountaintop above the clouds, and an old resort covered in vines. The view from your window shows the way.\n\nPark where you like, roll out the awning, cook a camp meal and post photos to the travellers' feed. Likes become gold for lamps, plants, beds and a wood stove for your van. The window shows the very place you parked.\n\nSunrise, sunset, rain, fog and wind change every place. Ask a friend to ride along, or give a backpacker a lift to the next campground. Photo requests, travel goals with badges and a bigger motorhome in the garage. No fighting, just a slow journey.\n\nDrive and walk with the left stick or WASD; the buttons at the bottom right do the rest."
+   },
+   "tags": [
+    "cozy",
+    "adventure"
+   ],
+   "players": 12,
+   "released": "2026-10-08",
+   "url": "https://www.roblox.com/games/71935639249849",
+   "icon": "assets/games/road-home/icon.webp",
+   "cover": "assets/games/road-home/shot-1.webp",
+   "hero": "assets/games/road-home/hero.webp",
+   "gallery": [
+    "assets/games/road-home/shot-1.webp",
+    "assets/games/road-home/shot-2.webp",
+    "assets/games/road-home/shot-3.webp",
+    "assets/games/road-home/shot-4.webp"
+   ]
+  },
+  {
+   "id": "close-the-fridge",
+   "platform": "roblox",
+   "title": {
+    "ko": "냉장고 문 좀 닫아!",
+    "en": "CLOSE THE FRIDGE!"
+   },
+   "tagline": {
+    "ko": "장을 조금 봤을 뿐인데 냉장고 문이 안 닫혀요!",
+    "en": "I only bought a little… so why won't the fridge close?!"
+   },
+   "description": {
+    "ko": "장을 조금 봤을 뿐인데 냉장고 문이 안 닫혀요!\n\n동네 냉장고 정리 전문가가 되어, 성격 있는 음식들이 편안해지는 자리를 찾아 주고 마지막에 문을 찰칵 닫아 보세요.\n\n- 세워야 편한 우유, 눕혀야 잠드는 수박, 놓으면 쑥 자라는 오이, 빈틈으로 흘러드는 젤리\n- 짝이 필요한 쌍둥이 푸딩, 수박을 무서워하는 달걀, 냄새 뿜는 마늘 대장, 접히는 소시지, 생일 케이크\n- 장바구니 카트를 타고 동네를 달려 할머니 집, 디저트 가게, 동네 식당, 박사님 연구소의 의뢰를 해결해요\n- 매일 모두가 같은 문제를 푸는 오늘의 장보기\n- 실패해도 처음부터 다시 할 필요 없어요. 되돌리기와 단계별 힌트가 언제나 무료예요\n- 코인으로 냉장고 색, 문 자석, 카트, 닫기 효과를 꾸며요\n- 처음이라면 도도가 차근차근 알려 줘요\n\n혼자서도 충분히 즐길 수 있고, 친구와 같은 서버에서 동네를 함께 달릴 수 있어요.",
+    "en": "I only bought a little... so why won't the fridge door close?!\n\nBecome the neighbourhood fridge expert. Every food has a personality: find where each one is comfy, then shut the door with a satisfying CLICK.\n\n- Milk likes to stand, the watermelon only sleeps lying down, the cucumber stretches when you place it, and jelly flows into the gaps\n- Twin puddings that must stay together, a shy egg scared of watermelons, Boss Garlic and his smell, a bendy sausage and a birthday cake\n- Ride a shopping cart around town and help Grandma, the dessert shop, the diner and the inventor's giant fridge\n- Today's Groceries: the same puzzle for everyone, every day\n- No game over: undo and step-by-step hints are always free\n- Decorate with coins: fridge colours, door magnets, carts and close effects\n- New here? Dodo shows you around step by step"
+   },
+   "tags": [
+    "puzzle",
+    "cozy"
+   ],
+   "players": 12,
+   "released": "2026-10-08",
+   "url": "https://www.roblox.com/games/94425926835062",
+   "icon": "assets/games/close-the-fridge/icon.webp",
+   "cover": "assets/games/close-the-fridge/shot-1.webp",
+   "hero": "assets/games/close-the-fridge/shot-1.webp",
+   "gallery": [
+    "assets/games/close-the-fridge/shot-1.webp",
+    "assets/games/close-the-fridge/shot-2.webp",
+    "assets/games/close-the-fridge/shot-3.webp"
+   ]
+  },
+  {
+   "id": "sky-bounty",
+   "platform": "roblox",
+   "title": {
+    "ko": "하늘 현상금 비공정",
+    "en": "SKY BOUNTY AIRSHIPS"
+   },
+   "tagline": {
+    "ko": "구름 바다를 누비며 하늘 해적을 쫓아라!",
+    "en": "Chase sky pirates across an open sea of clouds!"
+   },
+   "description": {
+    "ko": "구름 위 하늘 바다를 내 비공정으로 누비며 도망치는 하늘 해적선을 쫓아요!\n\n항구에서 출항해 섬과 섬 사이를 날아다니고, 정류장 고리에 배를 세워 수리하고, 내려서 걸어 다닐 수 있어요. 누구나 개인 섬을 하나씩 가지고 집, 풍차, 정원, 천문대로 꾸밀 수 있고, 다른 조종사의 섬에 날아가서 구경도 해요.\n\n현상금을 받으면 먼 현상금 구역까지 직접 항해해 싸워요. 하늘은 높이가 다섯 층으로 나뉘어 있어서, 위아래로 오르내리며 적의 약한 면을 노리고 예고된 포격은 높이를 바꿔 피해요. 장비 네 칸으로 수직 도약, 낙엽 강하, 사냥매 드론, 방향 장갑, 그물 포드, 연막 같은 싸움 방식을 정해요.\n\n도주선을 제압하면 옆에 붙어 추적자를 건너보내고, 체포하는 동안 지켜 준 뒤, 절벽에서 다시 태우면 현상금 성공. 아무도 다치지 않아요. 진 배는 연기를 내며 백기를 들어요.\n\n하루 두 번, 한국 시간 낮 열두 시와 저녁 여덟 시에 거대한 해적 거함이 항구로 쳐들어와요! 근처로 날아가면 자동으로 함께 싸우고, 막아 내면 하늘 진주와 희귀 알을 받아요.\n\n처음이면 튜토리얼이 출항부터 첫 현상금까지 차근차근 알려 줘요. 조작은 스틱 위가 전진, 좌우가 방향, 위로 아래로 버튼이 높이예요.",
+    "en": "Sail your own airship across an open sea of clouds and chase runaway sky pirates!\n\nSet sail from the harbor, fly from island to island and park in a station ring to repair. Everyone gets a personal island to build on with cottages, windmills, gardens and an observatory. Visit other pilots' islands too.\n\nTake a bounty and sail out to a far bounty zone to fight. The sky has five height layers: climb and dive to reach each ship's weak side, and change height to dodge warned attacks. Four gear slots decide how you fight.\n\nSubdue the runaway, pull up beside it to send your tracker across, guard the arrest, then pick your tracker up from a cliff ledge. Beaten ships just wave a white flag.\n\nTwice a day, at noon and eight in the evening Korea time, a giant pirate dreadnought attacks the harbor. Fly in to join the fight and win sky pearls and a rare egg.\n\nNew pilots get a step by step tutorial from setting sail to the first bounty."
+   },
+   "tags": [
+    "adventure",
+    "action"
+   ],
+   "players": 200,
+   "released": "2026-10-06",
+   "url": "https://www.roblox.com/games/138074884956875",
+   "icon": "assets/games/sky-bounty/icon.webp",
+   "cover": "assets/games/sky-bounty/shot-1.webp",
+   "hero": "assets/games/sky-bounty/hero.webp",
+   "gallery": [
+    "assets/games/sky-bounty/shot-1.webp",
+    "assets/games/sky-bounty/shot-2.webp",
+    "assets/games/sky-bounty/shot-3.webp",
+    "assets/games/sky-bounty/shot-4.webp",
+    "assets/games/sky-bounty/shot-5.webp"
+   ]
+  },
+  {
+   "id": "bread-escape",
+   "platform": "roblox",
+   "title": {
+    "ko": "빵이 탈출했다",
+    "en": "BREAD ESCAPE"
+   },
+   "tagline": {
+    "ko": "잘 구운 빵일수록 도망도 잘 간다!",
+    "en": "The better you bake it, the faster it runs!"
+   },
+   "description": {
+    "ko": "잘 구운 빵일수록 도망도 잘 갑니다!\n\n작은 동네 빵집에서 일하기 시작했는데, 누군가 반죽에 아주 활발한 마법 효모를 넣어 버렸어요. 오븐에서 갓 나온 빵들이 다리를 쭉 뻗고 탈출합니다. 집게로 잡고, 포장해서, 손님에게 건네 주세요!\n\n[ 이렇게 놀아요 ]\n- 성형대에서 반죽을 누르고 오븐에 넣어요\n- 오븐 문이 황금빛일 때 꺼내면 완벽 굽기! 더 활발한 빵이 나오고 보상도 커져요\n- 빵은 예고 동작을 하고, 달아나고, 잠깐 멈춰요. 민트색 원이 보이는 순간 집게로 잡아요\n- 포장대에서 포장하고 계산대에서 납품하면 빵코인!\n\n[ 탈출하는 빵들 ]\n통통 식빵, 돌격 바게트, 날개 크루아상, 폭주 도넛, 숨바꼭질 소보로, 뿜뿜 크림빵, 그네 프레첼, 미끌 소금빵. 빵마다 잡는 방법이 달라요.\n\n[ 혼자도, 친구와도 ]\n혼자 영업하기는 기다리지 않고 바로 시작해요. 친구와 함께하면 주문이 늘어나고, 보상은 실제로 한 일만큼 나눠요.\n\n[ 오븐 대탈주 ]\n영업 중 오븐들이 덜컹거리면 작은 빵들이 쏟아져 나와요. 잡을 때마다 바로 코인!\n\n레시피 해금, 빵 도감, 숙련, 도전과제와 배지, 앞치마 꾸미기까지. 특별 상점의 아이템은 저마다 장점과 대가, 그리고 다른 연출을 가지고 있어요.",
+    "en": "The better you bake it, the faster it runs!\n\nSomeone slipped lively magic yeast into the dough at your little corner bakery. Fresh breads pop out of the oven and make a run for it. Catch them with your tongs, pack them and hand them to the customers!\n\n[ How to play ]\n- Shape dough and put it in an oven\n- Pull it out while the door glows gold for a perfect bake\n- Breads show a tell, escape, then pause. Grab them when the mint ring appears\n- Pack at the packing table, deliver at the counter for bread coins\n\n[ Eight runaway breads ]\nToast, baguette, croissant, donut, soboro, cream bun, pretzel and salt roll. Each needs its own way to catch it.\n\n[ Solo or with friends ]\nSolo shifts start right away. Friends bring more orders, and everyone earns for the work they do.\n\n[ Oven Rush ]\nWhen the ovens rattle, mini breads pour out. Every catch pays coins!\n\nRecipes, a bread album, mastery, badges and aprons. Special shop items each have a strength, a cost and their own effects."
+   },
+   "tags": [
+    "coop",
+    "cozy"
+   ],
+   "players": 12,
+   "released": "2026-10-05",
+   "url": "https://www.roblox.com/games/73480943158059",
+   "icon": "assets/games/bread-escape/icon.webp",
+   "cover": "assets/games/bread-escape/shot-1.webp",
+   "hero": "assets/games/bread-escape/shot-1.webp",
+   "gallery": [
+    "assets/games/bread-escape/shot-1.webp",
+    "assets/games/bread-escape/shot-2.webp",
+    "assets/games/bread-escape/shot-3.webp",
+    "assets/games/bread-escape/shot-4.webp",
+    "assets/games/bread-escape/shot-5.webp"
+   ]
+  },
+  {
+   "id": "one-umbrella",
+   "platform": "roblox",
+   "title": {
+    "ko": "우산 하나로 살아남기",
+    "en": "ONE UMBRELLA"
+   },
+   "tagline": {
+    "ko": "우산 하나로 말도 안 되는 날씨를 건너라!",
+    "en": "Cross the craziest weather with ONE umbrella!"
+   },
+   "description": {
+    "ko": "\"비를 막으려고 우산을 폈는데 날아갔다. 그런데 그 덕분에 살아남았다.\"\n\n말도 안 되는 날씨가 몰아치는 동네! 우산 하나로 옥상과 처마를 건너 마지막 대피소까지 살아남으세요.\n\n- 펼치면 비와 우박을 막고, 천천히 떨어지고, 상승기류를 타요\n- 접으면 빠르게 달리고, 바람을 버티고, 빨랫줄 아래를 지나가요\n- 보통 비, 측풍, 상승기류, 젤리비, 작은 우박, 거대 물풍선, 동네 침수\n- 넘어져도 한 판에 한 번 구조 기회! 친구가 끌어올려 줄 수도 있어요\n\n혼자서도 완전한 플레이, 친구와 함께 대피. 지름길 활공, 날씨 도감, 도전과제와 배지, 귀여운 무료 우산까지.\n특별 우산은 모두 성능과 움직이는 효과가 다르고 장점과 대가가 함께 있어요.",
+    "en": "\"I opened my umbrella to block the rain and got blown away. That's how I survived.\"\n\nThe weather in this neighbourhood has gone ridiculous. Cross rooftops and awnings with ONE umbrella and reach the shelter!\n\n- Open it to block rain and hail, float down slowly and ride updrafts\n- Close it to run fast, hold firm in the wind and duck under laundry lines\n- Rain, side wind, updrafts, jelly rain, tiny hail, giant water balloons and a rising flood\n- One free rescue per run, and friends can pull you up\n\nFully playable solo or with friends. Glide shortcuts, a weather book, challenges and badges, and cute free umbrellas.\nSpecial umbrellas each have their own power AND cost plus their own moving effects."
+   },
+   "tags": [
+    "action"
+   ],
+   "players": 16,
+   "released": "2026-10-05",
+   "url": "https://www.roblox.com/games/102943916030659",
+   "icon": "assets/games/one-umbrella/icon.webp",
+   "cover": "assets/games/one-umbrella/shot-1.webp",
+   "hero": "assets/games/one-umbrella/shot-1.webp",
+   "gallery": [
+    "assets/games/one-umbrella/shot-1.webp",
+    "assets/games/one-umbrella/shot-2.webp",
+    "assets/games/one-umbrella/shot-3.webp",
+    "assets/games/one-umbrella/shot-4.webp",
+    "assets/games/one-umbrella/shot-5.webp"
+   ]
+  },
+  {
+   "id": "suspicious-returns",
+   "platform": "roblox",
+   "title": {
+    "ko": "수상한 반품센터",
+    "en": "SUSPICIOUS RETURNS"
+   },
+   "tagline": {
+    "ko": "고객님, 이건 반품이 아니라 탈주입니다.",
+    "en": "Ma'am, this isn't a return. It's an escape."
+   },
+   "description": {
+    "ko": "\"고객님. 이건 반품이 아니라 탈주입니다.\"\n\n수상한 반품센터의 신입 검수원이 되어 돌아온 물건을 검사하세요! 송장 스캐너, 전자저울, 검사등, 작동 검사로 단서를 찾고, 근거를 고른 뒤 도장을 꾹.\n\n- 반품 승인: 진짜 고장이거나 기간 안의 정상 반품\n- 반품 거절: 게임기 상자 속 벽돌, 짝짝이 운동화, 기간 초과\n- 특수 격리: 새벽마다 출근하는 의자, 우주가 들어 있는 밥솥, 늘어나는 양말, 한 박자 늦는 거울\n\n잘못 승인하면? 의자가 직원 출입문으로 도망가고, 양말이 작업대를 뒤덮고, 청소기가 소리를 빨아들여요. 동료와 함께 사고를 수습하세요.\n마감 직전에는 센터 전체를 반품하려는 거대한 상자가 도착합니다!\n\n혼자서도 완전한 플레이, 친구와 함께하는 협동 근무. 열두 가지 물건과 수많은 사건 파일, 직원 경력 승급, 작업대 꾸미기, 도전과제와 배지.\n특별 장비는 모두 성능과 효과가 다르고 장점과 대가가 함께 있어요. 정답을 알려주는 장비는 없습니다.",
+    "en": "\"Ma'am, this isn't a return. It's an escape.\"\n\nYou're the new inspector at the Suspicious Returns Center. Use the scanner, the scale, the inspection lamp and a power test to find clues, pick your evidence, then STAMP.\n\n- Approve: real faults and valid returns inside the window\n- Reject: a brick in the console box, mismatched sneakers, way past the window\n- Quarantine: a chair that commutes at dawn, a rice cooker with a galaxy inside, multiplying socks, a mirror that lags a beat behind\n\nApprove the wrong thing and the chair bolts for the staff door, socks bury your bench and the vacuum eats every sound. Fix incidents together.\nRight before closing, a box big enough to return the whole center arrives!\n\nFully playable solo or in co-op with friends. Twelve products, lots of case files, career ranks, bench decor, challenges and badges.\nSpecial gear each has its own power AND cost plus its own effects. Nothing tells you the answer."
+   },
+   "tags": [
+    "puzzle",
+    "coop"
+   ],
+   "players": 16,
+   "released": "2026-10-05",
+   "url": "https://www.roblox.com/games/84749106453325",
+   "icon": "assets/games/suspicious-returns/icon.webp",
+   "cover": "assets/games/suspicious-returns/shot-1.webp",
+   "hero": "assets/games/suspicious-returns/shot-1.webp",
+   "gallery": [
+    "assets/games/suspicious-returns/shot-1.webp",
+    "assets/games/suspicious-returns/shot-2.webp",
+    "assets/games/suspicious-returns/shot-3.webp",
+    "assets/games/suspicious-returns/shot-4.webp",
+    "assets/games/suspicious-returns/shot-5.webp"
+   ]
+  },
+  {
+   "id": "burp-orchestra",
+   "platform": "roblox",
+   "title": {
+    "ko": "트림 오케스트라",
+    "en": "BURP ORCHESTRA"
+   },
+   "tagline": {
+    "ko": "가장 품격 없는 악기로, 가장 품격 있는 공연을.",
+    "en": "The least dignified instrument. The most dignified concert."
+   },
+   "description": {
+    "ko": "가장 품격 없는 악기로, 가장 품격 있는 공연을.\n정장을 차려입고 왕립 탄산 음악당 무대에 올라, 트림으로 의외로 멋진 음악을 완성하는 협동 리듬게임이에요.\n\n[공연]\n혼자 또는 친구 최대 넷이 한 무대에. 비어 있는 파트는 NPC 단원이 무료로 연주해요.\n버튼 두 개로 끝: 짧게 탭, 길게 누르기, 양쪽 동시 누르기.\n틀려도 공연은 끝나지 않아요. 실수는 작은 장식음이 되어 음악 안에 남아요.\n잘할수록 합주 게이지가 올라 조명과 반주와 관객이 점점 풍성해져요.\n\n[네 파트]\n베이스 부웅, 바리톤 브웁, 소프라노 삐웅, 딸꾹 퍼커션. 모두 처음부터 무료, 쉬움과 보통 난이도.\n\n[여섯 곡]\n소다 행진곡, 푸딩 궁전 왈츠, 지휘자의 가발 대탈출, 치즈구름 스윙, 달빛 딸꾹 세레나데, 왕립 대트림 축제.\n\n[모으기]\n박수코인으로 수집 음색과 나비넥타이, 반짝 효과, 왕립 연주복을 열어요. 명성을 쌓으면 칭호가 바뀌어요.\n\n[음색과 VFX 팩]\n무지개 아리아, 황금 튜바, 오로라 오페라, 칩튠 탄산 팩과 왕립 갈라 정장, 빛의 지휘봉.\n팩마다 음색과 효과 모양이 다르고, 장점과 대가가 함께 있어요. 상점에서 미리 들어볼 수 있어요.\n\n도전과제를 깨고 배지를 모아 보세요! 실례합니다. 공연 중입니다.",
+    "en": "The least dignified instrument. The most dignified concert.\nDress up, take the stage of the Royal Soda Concert Hall and turn burps into surprisingly lovely music in this co-op rhythm game.\n\nPlay solo or with up to four friends; NPC musicians fill any empty part for free. Two buttons: tap, hold, or press both.\nMistakes never end the show. Play well and the ensemble gauge fills the hall with light, a richer orchestra and a cheering crowd.\n\nFour free parts (Bass, Baritone, Soprano, Hiccup Drums) on Easy or Normal, and six original songs.\nEarn applause coins for collector voices, bow ties and a royal coat. Build fame for new titles.\nVoice and VFX packs (Rainbow Aria, Golden Tuba, Aurora Opera, Chiptune Fizz), the Royal Gala Suit and the Light Baton each bring their own sound, effects, strength and trade-off. Preview them in the shop.\n\nClear challenges and collect badges! Pardon us, a performance is in progress."
+   },
+   "tags": [
+    "rhythm",
+    "coop"
+   ],
+   "players": 16,
+   "released": "2026-10-02",
+   "url": "https://www.roblox.com/games/134235459867003",
+   "icon": "assets/games/burp-orchestra/icon.webp",
+   "cover": "assets/games/burp-orchestra/shot-1.webp",
+   "hero": "assets/games/burp-orchestra/hero.webp",
+   "gallery": [
+    "assets/games/burp-orchestra/shot-1.webp",
+    "assets/games/burp-orchestra/shot-2.webp",
+    "assets/games/burp-orchestra/shot-3.webp",
+    "assets/games/burp-orchestra/shot-4.webp",
+    "assets/games/burp-orchestra/shot-5.webp"
+   ]
+  },
+  {
+   "id": "crumb-crew",
+   "platform": "roblox",
+   "title": {
+    "ko": "부스러기 도둑단",
+    "en": "CRUMB CREW"
+   },
+   "tagline": {
+    "ko": "한 입만 더. 진짜 마지막 한 입.",
+    "en": "Just one more bite. Really, the last one."
+   },
+   "description": {
+    "ko": "한 입만 더. 진짜 마지막 한 입.\n\n먼지와 보풀로 태어난 작은 도둑단이 되어 거대한 아침 주방에 잠입하세요! 쿠키, 감자칩, 마시멜로, 캐러멜, 금박쿠키를 먹을수록 전리품은 늘지만 배가 볼록해져서 들어왔던 작은 구멍으로는 돌아갈 수 없어요.\n\n내려오는 집게 손을 피해 가구 아래로 숨고, 다가오는 로봇청소기를 피해 높은 곳으로! 실고리로 날아오르고, 종이컵에 숨고, 숟가락 다리를 놓아 친구를 도와주세요. 잡힌 친구는 구해 주고, 다 함께 손잡이를 돌려 거대한 왕쿠키를 비밀기지로 보내요.\n\n혼자서도, 친구와 최대 네 명까지도 즐길 수 있어요. 청소 시간이 오기 전에 귀환 그릇까지 돌아오면 코인과 간식 도감 도장을 받아요.\n\n특별 모습 상품은 모두 장점과 대가가 함께 있고, 저마다 다른 효과를 보여 줘요.",
+    "en": "Just one more bite. Really, the last one.\n\nBecome a tiny crumb thief made of dust and fluff and sneak into a giant morning kitchen! Every cookie, chip, marshmallow, caramel and gold leaf cookie adds loot, but your belly grows and the little hole you came in through gets too small.\n\nHide under furniture from the grabbing hand, climb away from the robot vacuum, zip up on a thread hook, hide under a paper cup and lay spoon bridges for your friends. Rescue trapped crewmates and crank the giant King Cookie home together.\n\nPlay solo or with up to four friends. Make it back to the home bowl before cleaning time to earn coins and stamp your snack codex.\n\nEvery special look has a real strength and a real cost, with its own effects."
+   },
+   "tags": [
+    "coop",
+    "action"
+   ],
+   "players": 16,
+   "released": "2026-10-02",
+   "url": "https://www.roblox.com/games/88478610329836",
+   "icon": "assets/games/crumb-crew/icon.webp",
+   "cover": "assets/games/crumb-crew/shot-1.webp",
+   "hero": "assets/games/crumb-crew/shot-1.webp",
+   "gallery": [
+    "assets/games/crumb-crew/shot-1.webp",
+    "assets/games/crumb-crew/shot-2.webp",
+    "assets/games/crumb-crew/shot-3.webp",
+    "assets/games/crumb-crew/shot-4.webp",
+    "assets/games/crumb-crew/shot-5.webp"
+   ]
+  },
+  {
+   "id": "junk-tub-voyage",
+   "platform": "roblox",
+   "title": {
+    "ko": "폐품욕조 대항해",
+    "en": "JUNK TUB VOYAGE"
+   },
+   "tagline": {
+    "ko": "세상에서 가장 우스운 배로, 가장 멋진 항해를.",
+    "en": "The silliest boat ever. The best voyage ever."
+   },
+   "description": {
+    "ko": "버려진 욕조에 폐품을 붙여라! 뒤집히기 전에 고쳐라!\n세상에서 가장 우스운 배로, 가장 멋진 항해를 떠나요.\n\n혼자 또는 친구 최대 넷이 한 욕조에 타요. 선장은 조종하고, 선원은 물을 퍼내고 테이프로 구멍을 막아요.\n\n[항해]\n목욕탕 배수로, 거품 세탁 거리, 폐품 수로를 지나 마지막엔 거대한 고무오리 해적선!\n쏟아지는 수도꼭지, 회전 빨래바구니, 옆바람, 좁은 철제 통로, 떠내려오는 가구를 피하세요.\n갈림길마다 안전 수로와 보물 수로 중에서 골라요.\n\n[욕조 정비소]\n선풍기, 헤어드라이어, 냉장고 문, 페트병, 뒤집힌 우산, 샤워커튼 돛 등 기능 부품 열여섯 가지.\n무겁게 달면 튼튼하지만 둔해지고, 빠르게 달면 흔들려요. 나만의 조합을 찾아보세요.\n\n[조작]\n이동: 조종 / 부스터 / 버티기 / 수리·퍼내기 / 우산·빨래판 접기\n\n[특별 항적과 장비]\n무지개 항적, 황금 물보라, 오로라 항적, 고무오리 커버, 오리 경적, 왕실 진수식.\n모두 모습과 효과가 다르고, 장점과 대가가 함께 있어요. 시험 수로에서 무료로 체험할 수 있어요.\n\n도전과제를 깨고 배지를 모아 보세요!",
+    "en": "Bolt junk onto an old bathtub. Patch it before it flips. Sail the silliest boat ever on the best voyage ever!\n\nSail solo or with up to four friends in one tub. The captain steers; the crew bails water and slaps duct tape on leaks.\n\nRide the Bathhouse Drain, Bubble Laundry Street and the Junkyard Canal, then sneak past a GIANT rubber duck pirate ship! Dodge pouring faucets, spinning baskets, crosswinds and drifting furniture. At every fork, pick the safe lane or the treasure lane.\n\nWorkshop: sixteen working parts, from desk fans and fridge doors to umbrellas and shower curtain sails. Heavy is tough but clumsy, fast is wobbly.\n\nSpecial wakes and gear: Rainbow Wake, Golden Spray, Aurora Wake, Rubber Duck Cover, Squeaky Duck Horn, Royal Launch. Each has its own look, strength and trade-off. Try them on the test run first.\n\nClear challenges and collect badges!"
+   },
+   "tags": [
+    "coop",
+    "adventure"
+   ],
+   "players": 16,
+   "released": "2026-10-02",
+   "url": "https://www.roblox.com/games/139653389206341",
+   "icon": "assets/games/junk-tub-voyage/icon.webp",
+   "cover": "assets/games/junk-tub-voyage/shot-1.webp",
+   "hero": "assets/games/junk-tub-voyage/shot-1.webp",
+   "gallery": [
+    "assets/games/junk-tub-voyage/shot-1.webp",
+    "assets/games/junk-tub-voyage/shot-2.webp",
+    "assets/games/junk-tub-voyage/shot-3.webp",
+    "assets/games/junk-tub-voyage/shot-4.webp",
+    "assets/games/junk-tub-voyage/shot-5.webp"
+   ]
+  },
+  {
+   "id": "moldy-pets-lab",
+   "platform": "roblox",
+   "title": {
+    "ko": "곰팡이펫 연구소",
+    "en": "MOLDY PETS LAB"
+   },
+   "tagline": {
+    "ko": "버리려던 식빵이 나를 따라온다!",
+    "en": "The old toast you were about to throw away is following you!"
+   },
+   "description": {
+    "ko": "버리려고 했던 식빵이 나를 따라온다!\n\n오래된 식빵 위의 작은 점이 눈을 뜨고, 펫이 당신을 \"이 생물의 담당 인간\"으로 지정했어요. 꽝 없는 실험으로 귀엽고 이상한 친구들을 발견하고, 쓰다듬고 간식을 주며 행동을 기록하고, 나만의 연구실에서 함께 지내요.\n\n- 배지(식빵, 치즈, 딸기, 별빛 젤) + 환경 신호 + 관찰 도구로 실험해요. 정확한 레시피는 언제나 같은 친구가 나와요. 틀려도 힌트를 받아요.\n- 빵, 치즈, 과일, 별빛 계열의 펫 열네 종과 행동 마흔두 가지를 연구 노트에 모아요.\n- 펫 세 마리와 산책하고, 조수 펫의 능력(발효 점프, 쫀득손, 씨앗 레이더, 꿈속 메모)을 써요.\n- 빵 부스러기 골목, 치즈 냉장고, 과일 상자 정원에서 표본을 모아요.\n- 배양은 접속하지 않아도 계속 진행돼요. 펫은 사라지지 않아요.\n- 거대 포자 다과회에서 다 같이 빛을 부어 포자를 피우고 별빛 젤을 받아요.\n- 연구 의뢰, 도전과제, 배지까지!\n\n스타일 상품은 저마다 장점과 단점, 그리고 다른 연출을 가지고 있어요. 펫 발견과 레시피는 모두에게 똑같아요.",
+    "en": "The old toast you were about to throw away is following you!\n\nA tiny dot on stale toast opens its eyes and names you \"this creature's assigned human\". Run experiments that never fail, discover cute strange friends, pat and feed them to record their behaviours, and live together in your own lab.\n\n- Mix a medium (toast, cheese, berry, star jelly) + a signal + a tool. An exact recipe always gives the same friend; a miss still gives a hint.\n- Fourteen pets and forty-two behaviours to record.\n- Walk with three pets and use your assistant's skill.\n- Gather samples in Crumb Alley, the Cheese Fridge and the Fruit Crate Garden.\n- Incubation keeps going while you're away.\n- Pour light together at the Giant Spore tea party for star jelly.\n- Requests, challenges and badges!\n\nEvery style has its own strength, weakness and effects. Pets and recipes are the same for everyone."
+   },
+   "tags": [
+    "cozy"
+   ],
+   "players": 8,
+   "released": "2026-10-02",
+   "url": "https://www.roblox.com/games/125254293304762",
+   "icon": "assets/games/moldy-pets-lab/icon.webp",
+   "cover": "assets/games/moldy-pets-lab/shot-1.webp",
+   "hero": "assets/games/moldy-pets-lab/hero.webp",
+   "gallery": [
+    "assets/games/moldy-pets-lab/shot-1.webp",
+    "assets/games/moldy-pets-lab/shot-2.webp",
+    "assets/games/moldy-pets-lab/shot-3.webp",
+    "assets/games/moldy-pets-lab/shot-4.webp",
+    "assets/games/moldy-pets-lab/shot-5.webp",
+    "assets/games/moldy-pets-lab/shot-6.webp",
+    "assets/games/moldy-pets-lab/shot-7.webp",
+    "assets/games/moldy-pets-lab/shot-8.webp"
+   ]
+  },
+  {
+   "id": "sewer-salvage",
+   "platform": "roblox",
+   "title": {
+    "ko": "하수구 보물낚시",
+    "en": "SEWER SALVAGE"
+   },
+   "tagline": {
+    "ko": "맨홀 아래에서 가장 예쁜 보물이 올라온다!",
+    "en": "The prettiest treasures come up from under the manholes!"
+   },
+   "description": {
+    "ko": "맨홀 아래에서 가장 예쁜 보물이 올라온다!\n\n옷걸이 낚싯대를 맨홀에 던지면… 물고기가 아니라 장화가 걸린다. 그런데 그 장화가 성큼성큼 도망간다!\n\n- 행동이 다른 6가지 보물: 둥실형, 버팀형, 도주형, 팽창형, 회전형, 속임형. 연타가 아니라 성격을 읽고 감고 놓기\n- 3구역 24종: 뚜껑 광장, 세탁 배수로, 폐상가 수로\n- 복원 공방: 녹슨 주전자가 귀족 찻주전자로. 결과를 먼저 보고 확정 복원\n- 나만의 전시실: 전시대 위에서도 장화는 발을 구르고 해파리는 부풀어요\n- 왕세탁기 인양: 1~4명이 함께 정렬하고, 거품을 피하고, 고정을 풀고, 끌어올리기 (혼자면 반장님이 도와줘요)\n- 무료 낚싯대 4종(옷걸이, 뚫어뻥, 스프링, 윈치)과 도전과제 13개, 배지 5개\n\n유료 낚싯대 4종은 각각 장점 하나와 단점 하나가 있고 VFX가 완전히 달라요. 상점에서 60초 무료 체험!",
+    "en": "The prettiest treasures come up from under the manholes!\n\nDrop a coat-hanger rod into a manhole... it's not a fish, it's a boot. And the boot is running away!\n\n- 6 behaviour types: Floater, Anchor, Runner, Inflater, Spinner, Trickster. No mashing: read the catch, reel and ease off\n- 3 zones, 24 species: Lid Plaza, Laundry Drain, Old Arcade Canal\n- Restoration: a rusty kettle becomes a noble teapot. You see the result before you restore\n- Your own gallery: the boot still stomps on its stand, the jellyfish still puffs\n- Giant Washer salvage: 1-4 players align the drum, dodge foam bursts, release the legs and pull it up (solo players get help from the crew chief)\n- 4 free rods (hanger, plunger, spring, winch), 13 challenges and 5 badges\n\n4 paid rods each have one strength, one weakness and completely different effects. Try any of them free for 60 seconds in the shop!"
+   },
+   "tags": [
+    "cozy",
+    "coop"
+   ],
+   "players": 12,
+   "released": "2026-10-02",
+   "url": "https://www.roblox.com/games/76820412631101",
+   "icon": "assets/games/sewer-salvage/icon.webp",
+   "cover": "assets/games/sewer-salvage/shot-1.webp",
+   "hero": "assets/games/sewer-salvage/shot-1.webp",
+   "gallery": [
+    "assets/games/sewer-salvage/shot-1.webp",
+    "assets/games/sewer-salvage/shot-2.webp",
+    "assets/games/sewer-salvage/shot-3.webp",
+    "assets/games/sewer-salvage/shot-4.webp",
+    "assets/games/sewer-salvage/shot-5.webp",
+    "assets/games/sewer-salvage/shot-6.webp",
+    "assets/games/sewer-salvage/shot-7.webp"
+   ]
+  },
+  {
+   "id": "dont-sneeze",
+   "platform": "roblox",
+   "title": {
+    "ko": "절대 재채기하지 마!",
+    "en": "SHHH... DON'T SNEEZE!"
+   },
+   "tagline": {
+    "ko": "들키지 않을 순간을 골라, 에취!",
+    "en": "Pick the moment nobody can hear you — ACHOO!"
+   },
+   "description": {
+    "ko": "🤧 폐관한 박물관에 갇혔다! 그런데… 코가 간질간질.\n\n경비 로봇 쉿봇이 졸고 있는 사이, 전시관 3곳의 출구 전원을 켜고 5분 안에 탈출하세요.\n재채기를 끝까지 참는 게임이 아니에요. 들키지 않을 순간을 골라 터뜨리는 게임이에요!\n\n🔔 괘종시계가 \"뎅!\" 하는 순간\n🚂 창밖 화물열차가 지나가는 순간\n🦖 공룡 모형이 \"크아앙!\" 하는 순간\n→ 그 소리에 맞춰 \"에취!\" 하면 쉿봇은 못 들어요.\n\n😤 참기: 6초까지 버틸 수 있지만 느려져요\n🤫 방음 전시실: 돌아가면 안전하게 재채기\n🪑 들키면? 쉿봇이 \"잠깐 진정 의자\"에 앉혀 줘요 (친구가 풀어 줄 수 있어요)\n\n👥 혼자 또는 친구와 최대 네 명 · 한 판은 금방 끝나요\n📒 사건 도감 · 🏆 도전과제와 배지\n🎀 무료 손수건·재채기 꾸미기 + 프리미엄 재채기(무지개 리본·황금 팡팡·오로라)는 화려한 효과와 함께 장점 하나, 단점 하나가 있어요.",
+    "en": "🤧 Locked in a closed museum… and your nose won't stop tickling.\n\nWhile ShhBot the guard robot dozes, turn on 3 exit switches and escape in 5 minutes.\nIt's not about holding in your sneeze forever. It's about picking the moment nobody can hear it!\n\n🔔 When the grandfather clock goes DONG\n🚂 When the freight train thunders past the windows\n🦖 When the toy T-rex goes ROAR\n→ Sneeze right then and ShhBot hears nothing.\n\n😤 HOLD it for up to 6 s (but you slow down)\n🤫 Soundproof booths: always safe to sneeze\n🪑 Heard? ShhBot sits you on the calm chair (friends can free you)\n\n👥 Solo or 1-4 friends · 3-5 minute runs\n📒 9 event cards · 🏆 challenges and badges\n🎀 Free hankies and sneeze styles, plus premium sneezes (Rainbow Ribbon, Golden Pop, Aurora) with flashy effects, one strength and one weakness each."
+   },
+   "tags": [
+    "puzzle",
+    "action"
+   ],
+   "players": 24,
+   "released": "2026-10-02",
+   "url": "https://www.roblox.com/games/95697160375175",
+   "icon": "assets/games/dont-sneeze/icon.webp",
+   "cover": "assets/games/dont-sneeze/shot-1.webp",
+   "hero": "assets/games/dont-sneeze/shot-1.webp",
+   "gallery": [
+    "assets/games/dont-sneeze/shot-1.webp",
+    "assets/games/dont-sneeze/shot-2.webp",
+    "assets/games/dont-sneeze/shot-3.webp",
+    "assets/games/dont-sneeze/shot-4.webp",
+    "assets/games/dont-sneeze/shot-5.webp"
+   ]
+  },
+  {
+   "id": "oops-cleaning-co",
+   "platform": "roblox",
+   "title": {
+    "ko": "똥손 주식회사",
+    "en": "OOPS! CLEANING CO."
+   },
+   "tagline": {
+    "ko": "청소는 화려하게. 사고는 우아하게.",
+    "en": "Clean with style. Fail with grace."
+   },
+   "description": {
+    "ko": "✨ 청소는 화려하게. 사고는 우아하게. ✨\n\n장비는 최첨단인데 직원들은 어딘가 어설픈 청소회사 《똥손 주식회사》에 오신 걸 환영해요!\n큰 본사 로비에서 출근해 분사·흡입 청소기 하나로 엉망이 된 현장을 반짝반짝하게 바꿔 보세요.\n\n🗺 현장 5곳: 회의실 대참사 · 양말 대탈주 세탁소(거품 토하는 세탁기!) · 반짝반짝 호텔 연회장 · 팝콘 폭발 영화관 · 털뭉치 애견 미용실\n\n🧽 이렇게 놀아요\n• 흡입(꾹): 먼지·서류·과자 부스러기를 쏙! 오래 누르면 압력이 올라 더 멀리 빨아들이지만… 100이 되면 사고!\n• 분사(꾹): 끈적한 얼룩은 거품으로 불리고, 도망가는 냄새 양말은 거품 방울에 가둬요.\n• 청소할수록 조명이 켜지고 음악 악기가 하나씩 더해져요. 마지막 얼룩이 지워지면 방 전체가 빛나요!\n\n🤣 사고 도감 6종: 카펫을 빨아들였더니 부장님이 김밥처럼 돌돌…? 미끄러운 거품, 환풍구로 탈출한 양말, 거품 속 도시락까지!\n\n👥 혼자 출근도, 빠른 매칭도, 친구 파티(최대 4명)도 모두 무료. 혼자서도 모든 의뢰를 끝낼 수 있어요.\n🏆 도전과제 11개 · 무료 배지 5개 · 급여로 청소기 색·작업모 해금\n💎 테마 청소기(오로라 버블·네온 디스코·벚꽃 달빛)는 더 화려한 VFX·사운드와 함께 흡입 스타일이 달라요(넓게·빠르게·멀리, 각각 작은 단점 있음). 급여는 모두 같고 무료 청소기로도 모든 의뢰를 끝낼 수 있어요. 로비 피팅 스튜디오에서 30초 무료로 입어 볼 수 있어요.\n\n모바일 지원 · 한국어/영어",
+    "en": "✨ Clean with style. Fail with grace. ✨\n\nWelcome to OOPS! CLEANING CO.: top-notch gear, clumsy staff. Clock in at a huge glamorous HQ, then make messy job sites sparkle with one vacuum that SPRAYs and SUCKs.\n\n🗺 5 maps: Meeting Room · Sock Stampede Laundromat · Sparkle Hotel Banquet · Popcorn Panic Cinema · Fluffy Pet Salon\n\n🧽 How to play\n• Hold SUCK: dust, paper and crumbs go shloop! Longer = more pressure and reach… but at 100, accidents happen.\n• Hold SPRAY: foam up sticky stains and trap runaway smelly socks in bubbles.\n• The cleaner the room, the brighter the lights and the fuller the music!\n\n🤣 6 silly accidents to discover, like vacuuming up the carpet with the boss on it.\n\n👥 Solo, quick match or a party of up to 4, all free.\n🏆 11 challenges · 5 free badges · earn pay for colours and caps\n💎 Theme vacuums: flashier FX plus their own suction style (wider, faster or longer, each with a trade-off). Pay is equal. Free 30 s try-on in the lobby.\n\nMobile · Korean & English"
+   },
+   "tags": [
+    "coop",
+    "action"
+   ],
+   "players": 50,
+   "released": "2026-09-30",
+   "url": "https://www.roblox.com/games/71290572011246",
+   "icon": "assets/games/oops-cleaning-co/icon.webp",
+   "cover": "assets/games/oops-cleaning-co/shot-1.webp",
+   "hero": "assets/games/oops-cleaning-co/shot-1.webp",
+   "gallery": [
+    "assets/games/oops-cleaning-co/shot-1.webp",
+    "assets/games/oops-cleaning-co/shot-2.webp",
+    "assets/games/oops-cleaning-co/shot-3.webp",
+    "assets/games/oops-cleaning-co/shot-4.webp",
+    "assets/games/oops-cleaning-co/shot-5.webp",
+    "assets/games/oops-cleaning-co/shot-6.webp",
+    "assets/games/oops-cleaning-co/shot-7.webp",
+    "assets/games/oops-cleaning-co/shot-8.webp"
+   ]
+  },
+  {
+   "id": "not-my-sock",
+   "platform": "roblox",
+   "title": {
+    "ko": "그 양말 내 거 아냐!",
+    "en": "NOT MY SOCK!"
+   },
+   "tagline": {
+    "ko": "터지기 전에, 냄새나는 양말을 넘겨라!",
+    "en": "Pass the stinky sock before it goes POOF!"
+   },
+   "description": {
+    "ko": "🧦 그 양말 내 거 아냐! 🧦\n분실 양말 세탁소에서 냄새나지만 세상에서 제일 귀여운 양말이 튀어나왔어요!\n\n✨ 이렇게 놀아요\n• 양말을 받으면 다른 사람에게 던져서 넘기세요!\n• 빗나가면? 양말이 부메랑처럼 나한테 돌아와요 😱\n• 18초 경보가 울릴 때 양말을 들고 있으면… 펑! 예쁜 냄새 폭발!\n• 6라운드 개인전. 한 번 터져도 다음 라운드에 바로 복귀해요.\n• 사람이 모자라면 '빨래봇'이 빈자리를 채워서 혼자서도 바로 대전!\n\n🧺 로비에서 바구니 던지기 연습, 도전 과제 6개, 세탁 코인으로 양말·이펙트·리액션 해금\n🌈 금빛 세탁 · 무지개 리본 · 오로라 베일 이펙트 (외형만, 능력치 변화 없음)\n\n조작: 이동 + 던지기(E/클릭) + 피하기(Q/Shift). 모바일은 오른쪽 큰 버튼!",
+    "en": "🧦 NOT MY SOCK! 🧦\nA smelly — but adorable — sock just popped out of the Lost Sock Laundromat!\n\n✨ How to play\n• Got the sock? Throw it at someone else!\n• Miss, and it boomerangs right back to YOU 😱\n• When the 18-second alarm rings, whoever holds it gets a sparkly stink POOF!\n• 6-round free-for-all. Get poofed and you're straight back in next round.\n• Not enough players? Clearly-labelled Washbots fill the seats, so you can play solo right away.\n\n🧺 Basket practice in the lobby, 6 challenges, and laundry coins to unlock socks, effects and reactions.\n🌈 Golden Wash · Rainbow Ribbons · Aurora Veil effects (looks only, no stat changes).\n\nControls: move + THROW (E/click) + DODGE (Q/Shift). On mobile, use the big buttons on the right!"
+   },
+   "tags": [
+    "versus"
+   ],
+   "players": 50,
+   "released": "2026-09-30",
+   "url": "https://www.roblox.com/games/99181276410872",
+   "icon": "assets/games/not-my-sock/icon.webp",
+   "cover": "assets/games/not-my-sock/shot-1.webp",
+   "hero": "assets/games/not-my-sock/shot-1.webp",
+   "gallery": [
+    "assets/games/not-my-sock/shot-1.webp",
+    "assets/games/not-my-sock/shot-2.webp",
+    "assets/games/not-my-sock/shot-3.webp"
+   ]
+  },
+  {
+   "id": "booger-roll",
+   "platform": "roblox",
+   "title": {
+    "ko": "코딱지 대굴대굴",
+    "en": "Booger Roll"
+   },
+   "tagline": {
+    "ko": "굴리면 굴릴수록 세상이 달라붙는다!",
+    "en": "The more it rolls, the more the world sticks to it!"
+   },
+   "description": {
+    "ko": "🟢 코를 후비적~ 톡! 코딱지를 굴리면 굴릴수록 세상 모든 게 달라붙어요!\n\n• 방향만 바꾸면 알아서 대굴대굴 굴러가요. (멈춤 버튼도 있어요)\n• 8개 지역을 복도로 이어 굴러다니며 탐험: 장난감 방 · 부스러기 주방 · 거품 욕실 · 빨래 퍼레이드 · 문구 놀이터 · 낙엽 공원 · 재활용 골목 · 네온 축제광장\n• 먼지·도토리·클립부터 공원 벤치, 택배 상자, 대왕 풍선까지! 96가지 물건이 달라붙어요.\n• 반짝이는 희귀 물건(황금 단추, 네잎클로버, 네온 구슬…)을 찾아보세요.\n• 📖 도감: 처음 붙인 물건은 도감에 기록되고 골드를 받아요. 지역 도감을 다 채우면 보너스!\n• 코딱지 씨앗 → 말랑 뭉치 → 덩어리 볼 → 왕코딱지 → 대왕 롤 → 전설 롤로 쑥쑥 성장\n• 비누·빨대·야광봉은 슈웅! 가속, 젤리·실뭉치·솜사탕은 끈적끈적 흡착 범위 증가\n• 원할 때 코딱지를 팔아 골드를 받고, 9가지 색으로 바꿔요\n• ✨ 꾸미기: 무지개 리본 · 금빛 반짝 · 오로라 베일 · 쌍무지개 콧물 세트 (15초 무료 체험, 외형 전용)\n• 서버 순위와 🏆 전체 Top 100에서 누가 제일 큰 코딱지인지 확인!\n• 크기·최고 기록·골드·색상·도감은 자동 저장돼요\n\n싸우거나 빼앗는 게임이 아니에요. 그냥 계속 굴리고, 붙이고, 커지는 기분 좋은 게임!\n\n📱 모바일: 왼쪽 스틱으로 방향 · 멈춤 버튼 · 팔기 버튼은 꾹 누르기\n💻 PC: WASD 방향 · 스페이스 멈춤\n\n🟢 Pick, flick and ROLL! Roll through 8 connected zones and stick 96 kinds of things to your booger, from dust and acorns to park benches and giant balloons. Find rare items, fill the collection book, sell for gold, pick colors and climb the global Top 100. No fighting, just roll",
+    "en": "🟢 Pick… flick… ROLL! The more your booger rolls, the more the world sticks to it!\n\n• Just steer: it keeps rolling on its own.\n• 8 zones joined by hallways: Toy Room, Crumb Kitchen, Bubble Bathroom, Laundry Parade, Stationery Playground, Leaf Park, Recycling Alley, Neon Festival Plaza.\n• 96 things to stick, from dust and acorns to park benches and giant balloons!\n• Hunt rare finds like the Golden Button and Neon Bead.\n• 📖 Collection book: first finds pay gold, complete a zone for a bonus.\n• Grow from Booger Seed to Legend Roll.\n• Soap and straws give a zoom boost; gummies and yarn make you extra sticky.\n• Sell your booger for gold and unlock 9 colors.\n• ✨ Style: 4 trails and sets with a 15-second free trial (looks only).\n• Server board plus a 🏆 global Top 100.\n• Everything saves automatically.\n\nNo fighting: just roll, stick and grow!\n\n📱 Mobile: left stick to steer · Stop button · hold Sell\n💻 PC: WASD to steer · Space to stop"
+   },
+   "tags": [
+    "adventure",
+    "cozy"
+   ],
+   "players": 30,
+   "released": "2026-09-30",
+   "url": "https://www.roblox.com/games/116423882888970",
+   "icon": "assets/games/booger-roll/icon.webp",
+   "cover": "assets/games/booger-roll/shot-1.webp",
+   "hero": "assets/games/booger-roll/shot-1.webp",
+   "gallery": [
+    "assets/games/booger-roll/shot-1.webp",
+    "assets/games/booger-roll/shot-2.webp",
+    "assets/games/booger-roll/shot-3.webp",
+    "assets/games/booger-roll/shot-4.webp"
+   ]
+  },
+  {
+   "id": "plunger-brawl",
+   "platform": "roblox",
+   "title": {
+    "ko": "뚫어뻥 쟁탈전",
+    "en": "PLUNGER BRAWL"
+   },
+   "tagline": {
+    "ko": "붙이고! 당기고! 비누는 내 바구니로!",
+    "en": "Stick! Pull! Get the soap into YOUR basket!"
+   },
+   "description": {
+    "ko": "🧼 붙여! 당겨! 비누는 내 빨래통으로! 최대 6명이 겨루는 150초 개인전.\n\n• 비누에 붙이면 끌고 오고, 세탁기 고리에 붙이면 내가 날아가고, 라이벌에 붙이면 살짝 당겨요.\n• 마른 바닥에서 버티면 줄다리기에 강해지지만, 거품 위에서는 미끄러져요!\n• 남이 끌고 가는 비누를 가로채도 되고, 남들이 싸우는 사이 조용히 챙겨도 돼요.\n• 마지막 30초에는 2점짜리 황금 비누가 등장!\n• 빨래통에 넣은 점수는 안전해요. 아무도 빼앗을 수 없어요.\n• 혼자 들어와도 표시된 청소봇과 바로 시작해요.\n\n세탁 코인으로 꾸미기를 모으고 뱃지 5종에 도전하세요. 유료 상품은 외형과 연출만 바꾸고 능력치는 모두 같아요.\n\n📱 모바일: 왼쪽 스틱 이동 · 큰 버튼 붙이기/놓기 · 작은 버튼 버티기\n💻 PC: WASD 이동 · 마우스 왼쪽 또는 E 붙이기/놓기 · Shift 버티기\n\nPLUNGER BRAWL: stick soap with your plunger and drag it into YOUR basket! Up to 6 janitors, 150-second free-for-all. Stick soap to haul it, a washer hook to zip, a rival to yank them. Brace on dry floor, slip on foam, and grab the 2-point golden soap in the final 30 seconds. Scored soap is safe. Bots fill empty seats. Paid items are cosmetic only.",
+    "en": "🧼 Stick! Pull! Get the soap into YOUR basket! A 150-second free-for-all for up to 6 janitors per arena.\n\n• Stick a soap to haul it, stick a washer hook to zip across, stick a rival to give them a quick yank.\n• Brace on dry floor to win the tug-of-war, but watch out: foam is slippery!\n• Steal a soap someone else is dragging, or quietly grab one while everyone else fights.\n• A 2-point golden soap drops in the final 30 seconds!\n• Points in your basket are safe. Nobody can take them.\n• Jump in solo anytime: labeled cleaning bots fill empty seats.\n\nEarn laundry coins to collect cosmetics and chase 5 badges. Paid items only change looks and effects; everyone plays with the same stats.\n\n📱 Mobile: left stick to move · big button to stick / let go · small button to brace\n💻 PC: WASD to move · left click or E to stick / let go · Shift to brace"
+   },
+   "tags": [
+    "versus",
+    "action"
+   ],
+   "players": 50,
+   "released": "2026-09-29",
+   "url": "https://www.roblox.com/games/102749947306107",
+   "icon": "assets/games/plunger-brawl/icon.webp",
+   "cover": "assets/games/plunger-brawl/shot-1.webp",
+   "hero": "assets/games/plunger-brawl/shot-1.webp",
+   "gallery": [
+    "assets/games/plunger-brawl/shot-1.webp",
+    "assets/games/plunger-brawl/shot-2.webp",
+    "assets/games/plunger-brawl/shot-3.webp"
+   ]
+  },
+  {
+   "id": "fart-delivery",
+   "platform": "roblox",
+   "title": {
+    "ko": "방귀 택배",
+    "en": "FART DELIVERY"
+   },
+   "tagline": {
+    "ko": "배송 먼저, 착지는 나중에!",
+    "en": "Deliver first, land later!"
+   },
+   "description": {
+    "ko": "📦 배송 먼저, 착지는 나중에! 방귀 추진으로 날아가 장난감 마을 Fartville 곳곳의 우편함에 택배를 배달하세요. 혼자서도, 최대 50명이 함께해도 좋아요.\n\n• 분사 버튼을 꾹 눌러 충전하고 떼면 뿌앙! 세게 쏠수록 멀리 날지만 착지는 장담 못 해요.\n• 택배 6종: 일반 · 가벼운 풍선 · 조심해야 할 케이크 · 도망가는 상자 · 끈적한 슬라임 · 녹기 전에 배달할 냉장 택배\n• 지붕을 넘는 지름길, 우편함 명사수 투척, 옥상 배달 등 업적에 도전하세요.\n• 떨어뜨려도 괜찮아요. 무료 귀환으로 우체국에서 다시 시작!\n\n유료 방귀 효과는 모양과 색만 바뀌고 속도·가스·보상은 모두 같아요.\n\n💻 PC: 이동 WASD · 분사 F(누르고 떼기) · 집기/배송 E · 던지기 R · 귀환 H\n📱 모바일: 분사 · 동작 · 던지기 · 귀환 버튼\n🎮 게임패드: 분사 R2 · 집기 X · 던지기 B\n\nFART DELIVERY: charge a fart boost, launch across the toy town of Fartville and drop parcels in the right mailbox. Six parcel types, from fragile cakes to runaway boxes. Solo or with up to 50 couriers. Deliver first, land later! Paid effects are cosmetic only.",
+    "en": "📦 Deliver first, land later!\n\nCharge a fart boost, launch across the toy town of Fartville and drop parcels in the right mailbox. Solo or with up to 50 couriers.\n\n• Hold the boost button to charge, let go to launch. The harder you blast, the farther you fly… but the landing is up to you.\n• Six parcel types: regular, floaty balloon, fragile cake, runaway box, sticky slime and a chilled parcel that has to arrive before it melts.\n• Take rooftop shortcuts, go for mailbox trick shots and rooftop drops for achievements.\n• Dropped it? No problem. Free return to the post office.\n\nPaid fart effects only change shape and colour; speed, gas and rewards stay the same for everyone."
+   },
+   "tags": [
+    "action"
+   ],
+   "players": 50,
+   "released": "2026-09-29",
+   "url": "https://www.roblox.com/games/121416044460974",
+   "icon": "assets/games/fart-delivery/icon.webp",
+   "cover": "assets/games/fart-delivery/shot-1.webp",
+   "hero": "assets/games/fart-delivery/shot-1.webp",
+   "gallery": [
+    "assets/games/fart-delivery/shot-1.webp"
+   ]
+  }
+ ]
+}

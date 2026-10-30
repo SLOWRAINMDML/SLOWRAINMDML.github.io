@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f7fc">
+  <title>SLOWRAIN GAMES — 천천히 내리는 비처럼, 오래 스며드는 재미</title>
+  <meta name="description" content="SLOWRAIN GAMES(슬로우레인게임즈)의 Steam·Roblox 게임을 만나 보세요. 다크 판타지 전술 RPG Tactics to the devil dungeon과 로블록스 게임 20편.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SLOWRAIN GAMES">
+  <meta property="og:title" content="SLOWRAIN GAMES — Roblox · Steam games">
+  <meta property="og:description" content="천천히 내리는 비처럼, 오래 스며드는 재미. Steam 전술 RPG와 로블록스 게임 20편.">
+  <meta property="og:image" content="https://slowrainmdml.github.io/assets/brand/og.png">
+  <meta property="og:url" content="https://slowrainmdml.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preload" href="./assets/fonts/galmuri11-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#games" data-i18n="skip">게임 목록으로 건너뛰기</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="SLOWRAIN GAMES">
+        <img src="./assets/brand/logo.webp" alt="SLOWRAIN GAMES" width="700" height="233">
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#games" data-i18n="nav.games">게임</a>
+        <a href="#studio" data-i18n="nav.studio">스튜디오</a>
+        <a href="#contact" data-i18n="nav.contact">소식 받기</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="ko" aria-pressed="true">KO</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="pixel-button small" href="#games"><span data-i18n="nav.cta">게임 둘러보기</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <h1 class="sr-only" data-i18n="h1">SLOWRAIN GAMES 게임</h1>
+
+    <section class="showcase wrap" aria-roledescription="carousel" aria-label="Featured games">
+      <div class="rain" aria-hidden="true"></div>
+      <div class="slides" id="slides"><div class="slide-loading" data-i18n="loading">게임을 불러오는 중이에요…</div></div>
+      <div class="showcase-bar" id="showcase-bar" hidden>
+        <div class="slide-tabs" id="slide-tabs" role="tablist"></div>
+        <div class="slide-controls">
+          <button class="round-button" id="autoplay" type="button" aria-label="Pause"><span aria-hidden="true">Ⅱ</span></button>
+          <span class="slide-count"><b id="slide-current">01</b> / <span id="slide-total">01</span></span>
+          <button class="round-button" type="button" data-step="-1" aria-label="Previous">←</button>
+          <button class="round-button" type="button" data-step="1" aria-label="Next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="platform-strip wrap">
+      <span class="pixel" data-i18n="strip">SMALL STUDIO · BIG PLAYGROUNDS</span>
+      <div class="platform-logos">
+        <span class="platform-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.290-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>Steam</span>
+        <span class="platform-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.926 23.998 0 18.892 5.075.002 24 5.108ZM15.348 10.09l-5.282-1.453-1.414 5.273 5.282 1.453z"/></svg>Roblox</span>
+      </div>
+    </div>
+
+    <section id="games" class="games-section wrap" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow pixel">OUR GAMES <span class="label-line"></span></p>
+          <h2 id="games-title"><span data-i18n="games.title">오늘은 어떤 세계로 떠나볼까요</span><span class="accent">?</span></h2>
+        </div>
+        <div class="filters" role="group" aria-label="Platform" id="platform-filters">
+          <button class="filter active" type="button" data-platform="all" aria-pressed="true"><span data-i18n="filter.all">전체</span> <span class="count" data-count="all">0</span></button>
+          <button class="filter" type="button" data-platform="steam" aria-pressed="false">Steam (PC) <span class="count" data-count="steam">0</span></button>
+          <button class="filter" type="button" data-platform="roblox" aria-pressed="false">Roblox <span class="count" data-count="roblox">0</span></button>
+        </div>
+      </div>
+      <div class="genre-chips" role="group" aria-label="Genre" id="genre-chips"></div>
+      <div class="game-grid" id="game-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden data-i18n="empty">조건에 맞는 게임이 없어요. 다른 장르를 골라 보세요.</p>
+      <div class="content-error" id="content-error" role="alert" hidden><span data-i18n="error">게임 정보를 불러오지 못했어요.</span> <button type="button" id="retry" data-i18n="retry">다시 불러오기 ↻</button></div>
+      <noscript><p class="content-error">게임 목록을 보려면 JavaScript를 켜 주세요. / Please enable JavaScript to see the games.</p></noscript>
+    </section>
+
+    <section id="studio" class="studio-section" aria-labelledby="studio-title">
+      <div class="rain rain--studio" aria-hidden="true"></div>
+      <div class="wrap studio-inner">
+        <div class="studio-title">
+          <p class="eyebrow pixel">HELLO, WE ARE SLOWRAIN <span class="dot"></span></p>
+          <h2 id="studio-title" data-i18n-html="studio.title">천천히 내리는 비처럼,<br>오래 스며드는 재미<span class="accent">.</span></h2>
+          <img class="studio-cloud" src="./assets/brand/cloud.png" alt="" width="300" height="315" loading="lazy">
+        </div>
+        <div class="studio-copy">
+          <p data-i18n="studio.p1">슬로우레인게임즈는 한국의 작은 인디 게임 스튜디오입니다. 친구와 깔깔 웃는 로블록스 파티 게임부터 한 수 한 수 고민하는 다크 판타지 전술 RPG까지, 장르는 달라도 “한 판만 더”를 부르는 재미를 만듭니다.</p>
+          <p data-i18n="studio.p2">엉뚱한 상상 하나에서 시작해, 누구나 바로 이해하고 오래 기억하는 놀이로 다듬는 것. 그게 우리가 게임을 만드는 방식이에요.</p>
+          <dl class="stats">
+            <div><dt data-i18n="stats.roblox">로블록스 게임</dt><dd class="pixel" data-stat="roblox">20</dd></div>
+            <div><dt data-i18n="stats.steam">스팀 게임</dt><dd class="pixel" data-stat="steam">1</dd></div>
+            <div><dt data-i18n="stats.since">시작한 해</dt><dd class="pixel">2026</dd></div>
+          </dl>
+        </div>
+      </div>
+      <a class="studio-wordmark wrap pixel" href="#games" aria-label="Games">LET’S PLAY<span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section id="contact" class="contact-section wrap" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow pixel">STAY TUNED <span class="dot"></span></p>
+        <h2 id="contact-title" data-i18n="contact.title">새 게임 소식 받기</h2>
+        <p data-i18n="contact.body">Steam에서 찜하고 Roblox에서 팔로우하면 새 게임과 업데이트 소식을 가장 먼저 받을 수 있어요.</p>
+      </div>
+      <div class="contact-links" id="contact-links">
+        <a class="contact-card contact-card--steam" href="https://store.steampowered.com/app/5391060/" target="_blank" rel="noopener">
+          <span class="contact-kicker pixel">STEAM</span>
+          <strong data-i18n="contact.steam">Tactics to the devil dungeon 찜하기</strong>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-card contact-card--roblox" href="https://www.roblox.com/users/3025198342/profile" target="_blank" rel="noopener">
+          <span class="contact-kicker pixel">ROBLOX</span>
+          <strong data-i18n="contact.roblox">WISESLOWRAIN 팔로우하기</strong>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top" aria-label="SLOWRAIN GAMES"><img src="./assets/brand/logo.webp" alt="SLOWRAIN GAMES" width="700" height="233" loading="lazy"></a>
+      <p>© <span id="year">2026</span> SLOWRAIN GAMES. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="footer-note" data-i18n="footer.note">Roblox와 Steam은 각 소유자의 상표입니다.</p>
+      <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog class="game-dialog" id="game-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <button class="dialog-close" type="button" id="dialog-close" aria-label="Close">✕</button>
+      <div class="dialog-media">
+        <div class="dialog-stage" id="dialog-stage"></div>
+        <div class="dialog-thumbs" id="dialog-thumbs"></div>
+      </div>
+      <div class="dialog-info">
+        <div class="dialog-head">
+          <img class="dialog-icon" id="dialog-icon" alt="" width="72" height="72" hidden>
+          <div>
+            <p class="badge-row" id="dialog-badges"></p>
+            <h2 id="dialog-title"></h2>
+          </div>
+        </div>
+        <p class="dialog-tagline" id="dialog-tagline"></p>
+        <ul class="dialog-facts" id="dialog-facts"></ul>
+        <ul class="dialog-highlights" id="dialog-highlights" hidden></ul>
+        <div class="dialog-desc" id="dialog-desc"></div>
+        <div class="dialog-actions" id="dialog-actions"></div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
