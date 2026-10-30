@@ -16,9 +16,9 @@ const TEXT = {
     empty: "조건에 맞는 게임이 없어요. 다른 장르를 골라 보세요.",
     error: "게임 정보를 불러오지 못했어요.", retry: "다시 불러오기 ↻",
     "studio.title": "천천히 내리는 비처럼,<br>오래 스며드는 재미<span class=\"accent\">.</span>",
-    "studio.p1": "슬로우레인게임즈는 한국의 작은 인디 게임 스튜디오입니다. 친구와 깔깔 웃는 로블록스 파티 게임부터 한 수 한 수 고민하는 다크 판타지 전술 RPG까지, 장르는 달라도 “한 판만 더”를 부르는 재미를 만듭니다.",
+    "studio.p1": "슬로우레인게임즈는 한국의 작은 인디 게임 스튜디오입니다. 친구와 깔깔 웃는 로블록스 파티 게임부터 한 수 한 수 고민하는 다크 판타지 전술 RPG, 씨앗 하나에서 세계가 자라나는 모험 RPG까지, 장르는 달라도 “한 판만 더”를 부르는 재미를 만듭니다.",
     "studio.p2": "엉뚱한 상상 하나에서 시작해, 누구나 바로 이해하고 오래 기억하는 놀이로 다듬는 것. 그게 우리가 게임을 만드는 방식이에요.",
-    "stats.roblox": "로블록스 게임", "stats.steam": "스팀 게임", "stats.since": "시작한 해",
+    "stats.roblox": "로블록스 게임", "stats.pc": "PC 게임", "stats.since": "시작한 해",
     "contact.title": "문의 · 소식 받기",
     "contact.body": "게임 문의와 협업 제안은 메일로 보내 주세요. 새 게임과 업데이트 소식은 디스코드와 SNS에서 가장 먼저 전해요.",
     "contact.mail": "메일 보내기", "contact.discord": "커뮤니티 참여하기",
@@ -27,10 +27,11 @@ const TEXT = {
     "footer.rights": "All rights reserved.",
     "footer.note": "Roblox와 Steam은 각 소유자의 상표입니다.",
     playRoblox: "Roblox에서 플레이", wishlist: "Steam에서 찜하기", play: "플레이", wish: "찜하기",
+    follow: "출시 소식 받기", followShort: "소식 받기",
     details: "자세히 보기", live: "지금 플레이", players: n => `서버 최대 ${n}명`,
     released: d => `${d} 공개`, close: "닫기", pause: "자동 넘김 멈춤", resume: "자동 넘김 재생",
     prev: "이전", next: "다음", openGame: t => `${t} 자세히 보기`,
-    tags: { tactics: "전술 RPG", story: "스토리", adventure: "모험", action: "액션", coop: "협동", versus: "대전", cozy: "힐링", puzzle: "퍼즐", rhythm: "리듬" },
+    tags: { tactics: "전술 RPG", rpg: "RPG", story: "스토리", adventure: "모험", action: "액션", coop: "협동", versus: "대전", cozy: "힐링", puzzle: "퍼즐", rhythm: "리듬" },
   },
   en: {
     skip: "Skip to the games",
@@ -43,9 +44,9 @@ const TEXT = {
     empty: "No games match. Try another genre.",
     error: "We couldn't load the games.", retry: "Try again ↻",
     "studio.title": "Like slow rain,<br>fun that soaks in<span class=\"accent\">.</span>",
-    "studio.p1": "SLOWRAIN GAMES is a small indie game studio from Korea. From giggly Roblox party games to a dark fantasy tactics RPG where every move counts, we make games that keep you saying “just one more round.”",
+    "studio.p1": "SLOWRAIN GAMES is a small indie game studio from Korea. From giggly Roblox party games to a dark fantasy tactics RPG where every move counts and an adventure RPG whose world grows from a seed, we make games that keep you saying “just one more round.”",
     "studio.p2": "We start from one silly idea and polish it until anyone gets it right away and remembers it for a long time. That's how we make games.",
-    "stats.roblox": "Roblox games", "stats.steam": "Steam games", "stats.since": "Since",
+    "stats.roblox": "Roblox games", "stats.pc": "PC games", "stats.since": "Since",
     "contact.title": "Contact & news",
     "contact.body": "Send game questions and collaboration ideas by email. New games and updates land first on Discord and social media.",
     "contact.mail": "Send an email", "contact.discord": "Join the community",
@@ -54,10 +55,11 @@ const TEXT = {
     "footer.rights": "All rights reserved.",
     "footer.note": "Roblox and Steam are trademarks of their respective owners.",
     playRoblox: "Play on Roblox", wishlist: "Wishlist on Steam", play: "Play", wish: "Wishlist",
+    follow: "Get release news", followShort: "Follow",
     details: "Details", live: "Play now", players: n => `Up to ${n} per server`,
     released: d => `Out ${d}`, close: "Close", pause: "Pause slideshow", resume: "Play slideshow",
     prev: "Previous", next: "Next", openGame: t => `More about ${t}`,
-    tags: { tactics: "Tactics RPG", story: "Story", adventure: "Adventure", action: "Action", coop: "Co-op", versus: "Versus", cozy: "Cozy", puzzle: "Puzzle", rhythm: "Rhythm" },
+    tags: { tactics: "Tactics RPG", rpg: "RPG", story: "Story", adventure: "Adventure", action: "Action", coop: "Co-op", versus: "Versus", cozy: "Cozy", puzzle: "Puzzle", rhythm: "Rhythm" },
   },
 };
 
@@ -97,10 +99,17 @@ function formatDate(iso) {
     : date.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 }
 
+// A PC game can be headed for several stores (Steam, STOVE); a Roblox game is just "roblox".
+const platformsOf = game => game.platforms || [game.platform];
+const isPC = game => game.platform !== "roblox";
+const PLATFORM_BADGE = {
+  steam: `<span class="badge badge--steam">${ICON.steam}STEAM</span>`,
+  stove: '<span class="badge badge--stove">STOVE</span>',
+  roblox: `<span class="badge badge--roblox">${ICON.roblox}ROBLOX</span>`,
+};
+
 function badges(game) {
-  const platform = game.platform === "steam"
-    ? `<span class="badge badge--steam">${ICON.steam}STEAM</span>`
-    : `<span class="badge badge--roblox">${ICON.roblox}ROBLOX</span>`;
+  const platform = platformsOf(game).map(p => PLATFORM_BADGE[p] || "").join("");
   const status = game.status
     ? `<span class="badge badge--soon">${esc(pick(game.status))}</span>`
     : `<span class="badge badge--live">${esc(t("live"))}</span>`;
@@ -108,8 +117,23 @@ function badges(game) {
 }
 
 function ctaLabel(game, short) {
-  if (game.platform === "steam") return short ? t("wish") : t("wishlist");
-  return short ? t("play") : t("playRoblox");
+  if (game.platform === "roblox") return short ? t("play") : t("playRoblox");
+  if (game.url) return short ? t("wish") : t("wishlist");
+  return short ? t("followShort") : t("follow");   // no store page yet: point at the news links
+}
+
+function ctaIcon(game) {
+  if (game.platform === "roblox") return ICON.roblox;
+  return game.url ? ICON.steam : "";
+}
+
+// Store link, or the on-page contact section for a game without a store page yet.
+function ctaAttrs(game) {
+  return game.url ? `href="${esc(game.url)}" target="_blank" rel="noopener"` : 'href="#contact" data-to-contact';
+}
+
+function ctaButton(game) {
+  return `<a class="pixel-button ${isPC(game) ? "steam" : "sky"}" ${ctaAttrs(game)}>${ctaIcon(game)}${esc(ctaLabel(game))} <span aria-hidden="true">${game.url ? "↗" : "↓"}</span></a>`;
 }
 
 // ---------- Loading ----------
@@ -168,7 +192,7 @@ function renderSlides() {
           : `<h2 class="slide-title">${esc(pick(game.title))}${state.lang === "ko" && game.title.en !== game.title.ko ? `<span class="sub">${esc(game.title.en)}</span>` : ""}</h2>`}
         <p class="slide-tagline">${esc(pick(game.tagline))}</p>
         <div class="slide-actions">
-          <a class="pixel-button ${game.platform === "steam" ? "steam" : "sky"}" href="${esc(game.url)}" target="_blank" rel="noopener">${ICON[game.platform]}${esc(ctaLabel(game))} <span aria-hidden="true">↗</span></a>
+          ${ctaButton(game)}
           <button class="pixel-button ghost" type="button" data-open="${esc(game.id)}">${esc(t("details"))}</button>
         </div>
       </div>
@@ -267,12 +291,12 @@ function bindShowcase() {
 // ---------- Game list ----------
 
 function visibleByPlatform() {
-  return state.games.filter(g => state.platform === "all" || g.platform === state.platform);
+  return state.games.filter(g => state.platform === "all" || platformsOf(g).includes(state.platform));
 }
 
 function renderFilters() {
-  for (const key of ["all", "steam", "roblox"]) {
-    const n = key === "all" ? state.games.length : state.games.filter(g => g.platform === key).length;
+  for (const key of ["all", "steam", "stove", "roblox"]) {
+    const n = key === "all" ? state.games.length : state.games.filter(g => platformsOf(g).includes(key)).length;
     $(`[data-count="${key}"]`).textContent = n;
   }
   $$("#platform-filters .filter").forEach(btn => {
@@ -291,12 +315,12 @@ function renderFilters() {
 
 function cardHTML(game, index) {
   const tags = `<div class="tags">${game.tags.map(tag => `<span class="tag">${esc(t("tags")[tag] || tag)}</span>`).join("")}</div>`;
-  const play = `<a class="play-link" href="${esc(game.url)}" target="_blank" rel="noopener" aria-label="${esc(ctaLabel(game))}: ${esc(pick(game.title))}">${ICON[game.platform]}${esc(ctaLabel(game, true))} ↗</a>`;
+  const play = `<a class="play-link" ${ctaAttrs(game)} aria-label="${esc(ctaLabel(game))}: ${esc(pick(game.title))}">${ctaIcon(game)}${esc(ctaLabel(game, true))} ${game.url ? "↗" : "↓"}</a>`;
   const open = `<button class="card-hit" type="button" data-open="${esc(game.id)}" aria-label="${esc(t("openGame")(pick(game.title)))}"></button>`;
   const delay = `style="animation-delay:${Math.min(index, 12) * 40}ms"`;
-  const alt = game.gallery?.[1] && game.platform !== "steam" ? `<img class="alt" src="${esc(game.gallery[1])}" alt="" loading="lazy">` : "";
+  const alt = game.gallery?.[1] && !isPC(game) ? `<img class="alt" src="${esc(game.gallery[1])}" alt="" loading="lazy">` : "";
 
-  if (game.platform === "steam") {
+  if (isPC(game)) {
     const highlights = (pick(game.highlights) || []).slice(0, 3).map(h => `<li>${esc(h)}</li>`).join("");
     return `
       <article class="card card--feature" id="game-${esc(game.id)}" ${delay}>
@@ -330,7 +354,8 @@ function renderGames() {
 }
 
 function renderStats() {
-  $$("[data-stat]").forEach(el => { el.textContent = state.games.filter(g => g.platform === el.dataset.stat).length; });
+  const counts = { pc: state.games.filter(isPC).length, roblox: state.games.filter(g => !isPC(g)).length };
+  $$("[data-stat]").forEach(el => { el.textContent = counts[el.dataset.stat]; });
 }
 
 function bindFilters() {
@@ -354,7 +379,7 @@ function bindFilters() {
 
 function media(game) {
   const items = [];
-  if (game.platform === "steam") items.push({ type: "img", src: game.cover });
+  if (isPC(game)) items.push({ type: "img", src: game.cover });
   (game.videos || []).forEach(video => items.push({ type: "video", src: video.src, poster: video.poster }));
   (game.gallery || []).forEach(src => items.push({ type: "img", src }));
   return items;
@@ -387,7 +412,7 @@ function fillDialog(game) {
   $("#dialog-title").innerHTML = titleHTML(game);
   $("#dialog-tagline").textContent = pick(game.tagline);
 
-  const facts = game.platform === "steam"
+  const facts = isPC(game)
     ? [...pick(game.facts)]
     : [t("players")(game.players), t("released")(formatDate(game.released))];
   facts.push(game.tags.map(tag => t("tags")[tag]).join(" · "));
@@ -397,7 +422,7 @@ function fillDialog(game) {
   $("#dialog-highlights").hidden = !highlights.length;
   $("#dialog-highlights").innerHTML = highlights.map(h => `<li>${esc(h)}</li>`).join("");
   $("#dialog-desc").textContent = pick(game.description);
-  $("#dialog-actions").innerHTML = `<a class="pixel-button ${game.platform === "steam" ? "steam" : "sky"}" href="${esc(game.url)}" target="_blank" rel="noopener">${ICON[game.platform]}${esc(ctaLabel(game))} <span aria-hidden="true">↗</span></a>`;
+  $("#dialog-actions").innerHTML = ctaButton(game);
 }
 
 function openDialog(id, fromHash) {
@@ -416,6 +441,7 @@ function openDialog(id, fromHash) {
 function closeDialog() {
   const dialog = $("#game-dialog");
   if (dialog.open) dialog.close();
+  document.body.classList.remove("dialog-open");
 }
 
 function openFromHash() {
@@ -428,6 +454,12 @@ function bindDialog() {
   document.addEventListener("click", event => {
     const opener = event.target.closest("[data-open]");
     if (opener) openDialog(opener.dataset.open);
+    if (event.target.closest("[data-to-contact]") && dialog.open) {
+      event.preventDefault();
+      closeDialog();
+      history.replaceState(null, "", "#contact");
+      requestAnimationFrame(() => $("#contact").scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth" }));
+    }
   });
   $("#dialog-close").addEventListener("click", closeDialog);
   dialog.addEventListener("click", event => { if (event.target === dialog) closeDialog(); });

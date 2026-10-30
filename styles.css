@@ -162,6 +162,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .badge svg { width: 13px; height: 13px; fill: currentColor; }
 .badge--steam { background: #171a21; color: #c7d5e0; }
 .badge--roblox { background: #fff; color: #111; }
+.badge--stove { background: #ff5a00; color: #fff; }
 .badge--soon { background: var(--cream); color: #6b4a00; }
 .badge--live { background: #2fd27a; color: #05331b; }
 .badge--live::before { content: ""; width: 6px; height: 6px; background: currentColor; border-radius: 1px; animation: blink 1.4s steps(2) infinite; }
@@ -198,6 +199,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .platform-logos { display: flex; gap: 26px; }
 .platform-logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); }
 .platform-logo svg { width: 22px; height: 22px; fill: currentColor; }
+.stove-mark { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 6px; background: #ff5a00; color: #fff; font-family: var(--pixel); font-size: 13px; font-weight: 700; }
 
 /* Games */
 .games-section { padding: 96px 0 40px; }
@@ -382,6 +384,7 @@ h2 { margin: 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.2; letter-spac
 .dialog-info .badge { background: var(--bg); color: var(--ink-soft); }
 .dialog-info .badge--steam { background: #171a21; color: #c7d5e0; }
 .dialog-info .badge--roblox { background: var(--ink); color: #fff; }
+.dialog-info .badge--stove { background: #ff5a00; color: #fff; }
 .dialog-info .badge--soon { background: var(--cream); color: #6b4a00; }
 .dialog-info .badge--live { background: #d9f7e7; color: #0b5a31; }
 

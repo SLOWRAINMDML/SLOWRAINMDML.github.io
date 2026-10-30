@@ -246,7 +246,8 @@ def build_steam(g):
 
     return {
         "id": g["id"],
-        "platform": "steam",
+        "platform": "pc",
+        "platforms": g["platforms"],
         "title": g["title"],
         "tagline": g["tagline"],
         "description": {lang: details[lang]["short_description"] for lang in ("ko", "en")},
@@ -266,6 +267,33 @@ def build_steam(g):
     }
 
 
+def build_unreleased(g):
+    """PC game without a store page yet: images already made in assets/games/<id>/ (see tools/seedborne_media.py)."""
+    print(g["id"])
+    folder = MEDIA / g["id"]
+    rel = lambda p: p.relative_to(ROOT).as_posix()
+    return {
+        "id": g["id"],
+        "platform": "pc",
+        "platforms": g["platforms"],
+        "title": g["title"],
+        "tagline": g["tagline"],
+        "description": g["description"],
+        "highlights": g.get("highlights"),
+        "tags": g["tags"],
+        "status": g["status"],
+        "facts": g["facts"],
+        "url": None,
+        "icon": None,
+        "logo": rel(folder / "logo.webp"),
+        "cover": rel(folder / "cover.webp"),
+        "poster": rel(folder / "poster.webp"),
+        "hero": rel(folder / "hero.webp"),
+        "gallery": [rel(p) for p in sorted(folder.glob("shot-*.webp"), key=lambda p: int(p.stem.split("-")[1]))],
+        "videos": [],
+    }
+
+
 def main():
     catalog = json.loads(CATALOG.read_text())
     token = None if "--no-hero" in sys.argv else github_token()
@@ -273,8 +301,8 @@ def main():
     roblox = [g for g in catalog["games"] if g["platform"] == "roblox"]
     built = {g["id"]: g for g in build_roblox(roblox, featured, token)}
     for g in catalog["games"]:
-        if g["platform"] == "steam":
-            built[g["id"]] = build_steam(g)
+        if g["platform"] == "pc":
+            built[g["id"]] = build_steam(g) if g.get("steamAppId") else build_unreleased(g)
     games = [built[g["id"]] for g in catalog["games"]]
     OUT.write_text(json.dumps({"featured": catalog["featured"], "games": games}, ensure_ascii=False, indent=1) + "\n")
     print(f"wrote {OUT.relative_to(ROOT)}: {len(games)} games")

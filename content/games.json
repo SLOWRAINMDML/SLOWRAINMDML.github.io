@@ -1,6 +1,7 @@
 {
  "featured": [
   "tactics-devil-dungeon",
+  "seedborne-chronicle",
   "lantern-troupe",
   "sky-bounty",
   "galaxy-bounty",
@@ -11,7 +12,10 @@
  "games": [
   {
    "id": "tactics-devil-dungeon",
-   "platform": "steam",
+   "platform": "pc",
+   "platforms": [
+    "steam"
+   ],
    "title": {
     "ko": "Tactics to the devil dungeon",
     "en": "Tactics to the devil dungeon"
@@ -86,6 +90,79 @@
      "poster": "assets/games/tactics-devil-dungeon/clip-2.webp"
     }
    ]
+  },
+  {
+   "id": "seedborne-chronicle",
+   "platform": "pc",
+   "platforms": [
+    "steam",
+    "stove"
+   ],
+   "title": {
+    "ko": "Seedborne Chronicle",
+    "en": "Seedborne Chronicle"
+   },
+   "tagline": {
+    "ko": "씨앗에서 태어난 세계의 연대기",
+    "en": "A world born from a seed, a chronicle of generations"
+   },
+   "description": {
+    "ko": "시드 하나에서 대륙 하나가 자라납니다. 마을에서 의뢰를 받고, 미궁을 탐험하고, 동료와 함께 턴제 전투를 치르세요. 마을에 집을 마련해 가구를 들이고 밭과 가축을 돌보는 생활도 기다립니다. 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다.",
+    "en": "Every world grows from a seed. Take requests in town, explore labyrinths and fight turn-based battles alongside your companions. Buy a home to furnish, tend the fields and raise animals. When your adventurer retires, an heir carries the chronicle on."
+   },
+   "highlights": {
+    "ko": [
+     "시드 하나가 대륙 하나: 마을과 미궁, 해안선까지 매번 새로 자라나는 세계",
+     "동료와 함께하는 턴제 전투, 총공격과 3D 스킬 이펙트",
+     "마을에 집을 사서 꾸미고, 밭을 갈고, 가축을 키우는 생활",
+     "은퇴하면 후계자가 이어받는 세대의 연대기"
+    ],
+    "en": [
+     "One seed, one continent: towns, labyrinths and coastlines grow anew every time",
+     "Turn-based battles with your companions, all-out attacks and 3D skill effects",
+     "Buy a home in town, furnish it, farm the fields and raise animals",
+     "Retire, and your heir takes over: a chronicle across generations"
+    ]
+   },
+   "tags": [
+    "rpg",
+    "adventure",
+    "cozy"
+   ],
+   "status": {
+    "ko": "출시 준비 중",
+    "en": "Coming soon"
+   },
+   "facts": {
+    "ko": [
+     "Windows (PC)",
+     "한국어 · English · 日本語 · 简体中文 · 繁體中文",
+     "싱글 플레이"
+    ],
+    "en": [
+     "Windows (PC)",
+     "Korean · English · Japanese · Simplified & Traditional Chinese",
+     "Single-player"
+    ]
+   },
+   "url": null,
+   "icon": null,
+   "logo": "assets/games/seedborne-chronicle/logo.webp",
+   "cover": "assets/games/seedborne-chronicle/cover.webp",
+   "poster": "assets/games/seedborne-chronicle/poster.webp",
+   "hero": "assets/games/seedborne-chronicle/hero.webp",
+   "gallery": [
+    "assets/games/seedborne-chronicle/shot-1.webp",
+    "assets/games/seedborne-chronicle/shot-2.webp",
+    "assets/games/seedborne-chronicle/shot-3.webp",
+    "assets/games/seedborne-chronicle/shot-4.webp",
+    "assets/games/seedborne-chronicle/shot-5.webp",
+    "assets/games/seedborne-chronicle/shot-6.webp",
+    "assets/games/seedborne-chronicle/shot-7.webp",
+    "assets/games/seedborne-chronicle/shot-8.webp",
+    "assets/games/seedborne-chronicle/shot-9.webp"
+   ],
+   "videos": []
   },
   {
    "id": "lantern-troupe",
