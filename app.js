@@ -12,7 +12,7 @@ const TEXT = {
     loading: "게임을 불러오는 중이에요…",
     strip: "SMALL STUDIO · BIG PLAYGROUNDS",
     "games.title": "오늘은 어떤 세계로 떠나볼까요",
-    "filter.all": "전체", "genre.all": "모든 장르",
+    "filter.all": "전체", "filter.web": "모바일 웹", "genre.all": "모든 장르",
     empty: "조건에 맞는 게임이 없어요. 다른 장르를 골라 보세요.",
     error: "게임 정보를 불러오지 못했어요.", retry: "다시 불러오기 ↻",
     "studio.title": "천천히 내리는 비처럼,<br>오래 스며드는 재미<span class=\"accent\">.</span>",
@@ -31,7 +31,7 @@ const TEXT = {
     details: "자세히 보기", live: "지금 플레이", players: n => `서버 최대 ${n}명`,
     released: d => `${d} 공개`, close: "닫기", pause: "자동 넘김 멈춤", resume: "자동 넘김 재생",
     prev: "이전", next: "다음", openGame: t => `${t} 자세히 보기`,
-    tags: { tactics: "전술 RPG", rpg: "RPG", story: "스토리", adventure: "모험", action: "액션", coop: "협동", versus: "대전", cozy: "힐링", puzzle: "퍼즐", rhythm: "리듬" },
+    tags: { tactics: "전술 RPG", rpg: "RPG", tabletop: "TRPG", story: "스토리", adventure: "모험", action: "액션", coop: "협동", versus: "대전", cozy: "힐링", puzzle: "퍼즐", rhythm: "리듬" },
   },
   en: {
     skip: "Skip to the games",
@@ -40,7 +40,7 @@ const TEXT = {
     loading: "Loading games…",
     strip: "SMALL STUDIO · BIG PLAYGROUNDS",
     "games.title": "Which world will you visit today",
-    "filter.all": "All", "genre.all": "All genres",
+    "filter.all": "All", "filter.web": "Mobile web", "genre.all": "All genres",
     empty: "No games match. Try another genre.",
     error: "We couldn't load the games.", retry: "Try again ↻",
     "studio.title": "Like slow rain,<br>fun that soaks in<span class=\"accent\">.</span>",
@@ -59,7 +59,7 @@ const TEXT = {
     details: "Details", live: "Play now", players: n => `Up to ${n} per server`,
     released: d => `Out ${d}`, close: "Close", pause: "Pause slideshow", resume: "Play slideshow",
     prev: "Previous", next: "Next", openGame: t => `More about ${t}`,
-    tags: { tactics: "Tactics RPG", rpg: "RPG", story: "Story", adventure: "Adventure", action: "Action", coop: "Co-op", versus: "Versus", cozy: "Cozy", puzzle: "Puzzle", rhythm: "Rhythm" },
+    tags: { tactics: "Tactics RPG", rpg: "RPG", tabletop: "TRPG", story: "Story", adventure: "Adventure", action: "Action", coop: "Co-op", versus: "Versus", cozy: "Cozy", puzzle: "Puzzle", rhythm: "Rhythm" },
   },
 };
 
@@ -101,10 +101,11 @@ function formatDate(iso) {
 
 // A PC game can be headed for several stores (Steam, STOVE); a Roblox game is just "roblox".
 const platformsOf = game => game.platforms || [game.platform];
-const isPC = game => game.platform !== "roblox";
+const isPC = game => game.platform === "pc";
 const PLATFORM_BADGE = {
   steam: `<span class="badge badge--steam">${ICON.steam}STEAM</span>`,
   stove: '<span class="badge badge--stove">STOVE</span>',
+  web: '<span class="badge badge--web">WEB</span>',
   roblox: `<span class="badge badge--roblox">${ICON.roblox}ROBLOX</span>`,
 };
 
@@ -295,7 +296,7 @@ function visibleByPlatform() {
 }
 
 function renderFilters() {
-  for (const key of ["all", "steam", "stove", "roblox"]) {
+  for (const key of ["all", "steam", "stove", "roblox", "web"]) {
     const n = key === "all" ? state.games.length : state.games.filter(g => platformsOf(g).includes(key)).length;
     $(`[data-count="${key}"]`).textContent = n;
   }
@@ -354,7 +355,7 @@ function renderGames() {
 }
 
 function renderStats() {
-  const counts = { pc: state.games.filter(isPC).length, roblox: state.games.filter(g => !isPC(g)).length };
+  const counts = { pc: state.games.filter(isPC).length, roblox: state.games.filter(g => g.platform === "roblox").length };
   $$("[data-stat]").forEach(el => { el.textContent = counts[el.dataset.stat]; });
 }
 
@@ -379,7 +380,7 @@ function bindFilters() {
 
 function media(game) {
   const items = [];
-  if (isPC(game)) items.push({ type: "img", src: game.cover });
+  if (game.platform !== "roblox") items.push({ type: "img", src: game.cover, wide: true });
   (game.videos || []).forEach(video => items.push({ type: "video", src: video.src, poster: video.poster }));
   (game.gallery || []).forEach(src => items.push({ type: "img", src }));
   return items;
@@ -387,6 +388,7 @@ function media(game) {
 
 function showMedia(items, index) {
   const item = items[index];
+  $("#dialog-stage").classList.toggle("contain", Boolean(state.dialogGame && state.dialogGame.mediaFit === "contain" && !item.wide));
   $("#dialog-stage").innerHTML = item.type === "video"
     ? `<video src="${esc(item.src)}" poster="${esc(item.poster || "")}" autoplay muted loop playsinline></video>`
     : `<img src="${esc(item.src)}" alt="">`;
@@ -412,7 +414,7 @@ function fillDialog(game) {
   $("#dialog-title").innerHTML = titleHTML(game);
   $("#dialog-tagline").textContent = pick(game.tagline);
 
-  const facts = isPC(game)
+  const facts = game.facts
     ? [...pick(game.facts)]
     : [t("players")(game.players), t("released")(formatDate(game.released))];
   facts.push(game.tags.map(tag => t("tags")[tag]).join(" · "));

@@ -268,13 +268,15 @@ def build_steam(g):
 
 
 def build_unreleased(g):
-    """PC game without a store page yet: images already made in assets/games/<id>/ (see tools/seedborne_media.py)."""
+    """Game or project without a store page: images already made in assets/games/<id>/
+    (tools/seedborne_media.py, tools/trpgbot_media.py)."""
     print(g["id"])
     folder = MEDIA / g["id"]
     rel = lambda p: p.relative_to(ROOT).as_posix()
+    optional = lambda name: rel(folder / name) if (folder / name).exists() else None
     return {
         "id": g["id"],
-        "platform": "pc",
+        "platform": g["platform"],
         "platforms": g["platforms"],
         "title": g["title"],
         "tagline": g["tagline"],
@@ -285,10 +287,11 @@ def build_unreleased(g):
         "facts": g["facts"],
         "url": None,
         "icon": None,
-        "logo": rel(folder / "logo.webp"),
+        "logo": optional("logo.webp"),
         "cover": rel(folder / "cover.webp"),
-        "poster": rel(folder / "poster.webp"),
-        "hero": rel(folder / "hero.webp"),
+        "poster": optional("poster.webp"),
+        "hero": optional("hero.webp"),
+        "mediaFit": g.get("mediaFit"),
         "gallery": [rel(p) for p in sorted(folder.glob("shot-*.webp"), key=lambda p: int(p.stem.split("-")[1]))],
         "videos": [],
     }
@@ -301,7 +304,7 @@ def main():
     roblox = [g for g in catalog["games"] if g["platform"] == "roblox"]
     built = {g["id"]: g for g in build_roblox(roblox, featured, token)}
     for g in catalog["games"]:
-        if g["platform"] == "pc":
+        if g["platform"] != "roblox":
             built[g["id"]] = build_steam(g) if g.get("steamAppId") else build_unreleased(g)
     games = [built[g["id"]] for g in catalog["games"]]
     OUT.write_text(json.dumps({"featured": catalog["featured"], "games": games}, ensure_ascii=False, indent=1) + "\n")

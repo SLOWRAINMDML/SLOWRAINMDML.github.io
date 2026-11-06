@@ -65,6 +65,39 @@
         "en": ["Windows (PC)", "Korean · English · Japanese · Simplified & Traditional Chinese", "Single-player"]
       }
     },
+    {
+      "id": "trpg-master-bot",
+      "platform": "web",
+      "platforms": ["web"],
+      "_media": "No public address: images are real screens from tools/trpgbot/ (engine + web client) and tools/trpgbot_media.py.",
+      "mediaFit": "contain",
+      "title": { "ko": "TRPG 마스터봇", "en": "TRPG Master Bot" },
+      "tagline": { "ko": "폰 하나로 둘러앉는 판타지 TRPG 테이블", "en": "A fantasy tabletop RPG table everyone joins from their phone" },
+      "description": {
+        "ko": "《울타리 너머, 또 다른 모험으로》 룰로 진행하는 TRPG 마스터봇입니다. 판정과 전투, 주문, 성장은 코드가 룰북대로 처리하고, 마스터는 장면을 묘사하며 사건을 이끕니다. 플레이어는 같은 네트워크의 폰으로 접속해 세로형 픽셀 화면에서 말하고, 주사위를 굴리고, 함께 싸웁니다. 룰북 문장은 들어 있지 않으며, 가지고 있는 룰북에서 직접 추출해 씁니다.",
+        "en": "A game-master bot that runs tabletop sessions on the rules of Beyond the Wall and Other Adventures (Korean edition). Code handles checks, combat, spells and advancement by the book, while the master describes scenes and drives events. Players join from phones on the same network and talk, roll and fight on a portrait pixel screen. No rulebook text is included; it is extracted from your own copy."
+      },
+      "highlights": {
+        "ko": [
+          "판정·전투·주문·성장 규칙을 코드로 구현해, 주사위 결과는 언제나 룰북대로",
+          "최대 4명이 각자 폰으로 접속해 캐릭터를 만들고 함께 모험",
+          "시간과 날씨에 따라 빛과 그림자가 바뀌는 픽셀 지도, 지형을 쓰는 말판 전투",
+          "모험이 끝나면 장별로 다시 읽는 리플레이"
+        ],
+        "en": [
+          "Checks, combat, spells and advancement in code, so every roll follows the rulebook",
+          "Up to four players join from their own phones, make characters and adventure together",
+          "Pixel maps lit by time of day and weather, and board battles that use the terrain",
+          "A chapter-by-chapter replay of every finished adventure"
+        ]
+      },
+      "tags": ["tabletop", "coop"],
+      "status": { "ko": "개발 중", "en": "In development" },
+      "facts": {
+        "ko": ["모바일 웹 (같은 네트워크)", "1~4인 협동", "한국어"],
+        "en": ["Mobile web (same network)", "1–4 players, co-op", "Korean"]
+      }
+    },
     { "id": "lantern-troupe", "platform": "roblox", "universeId": 10771710255, "placeId": 125399513722362, "repo": "lantern-troupe", "tags": ["story", "adventure"],
       "tagline": { "ko": "세 번 울리는 종의 비밀을 쫓는 유랑극단 이야기", "en": "A travelling troupe follows the secret of the thrice-rung bell" } },
     { "id": "galaxy-bounty", "platform": "roblox", "universeId": 10771474129, "placeId": 120958892028671, "repo": "galaxy-bounty", "tags": ["adventure", "action"],

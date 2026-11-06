@@ -163,6 +163,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .badge--steam { background: #171a21; color: #c7d5e0; }
 .badge--roblox { background: #fff; color: #111; }
 .badge--stove { background: #ff5a00; color: #fff; }
+.badge--web { background: #2f8f83; color: #fff; }
 .badge--soon { background: var(--cream); color: #6b4a00; }
 .badge--live { background: #2fd27a; color: #05331b; }
 .badge--live::before { content: ""; width: 6px; height: 6px; background: currentColor; border-radius: 1px; animation: blink 1.4s steps(2) infinite; }
@@ -361,6 +362,8 @@ h2 { margin: 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.2; letter-spac
 .dialog-media { background: #0c1428; padding: 18px; display: flex; flex-direction: column; justify-content: safe center; gap: 12px; min-height: 0; overflow-y: auto; }
 .dialog-stage { aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #000; }
 .dialog-stage img, .dialog-stage video { width: 100%; height: 100%; object-fit: cover; }
+.dialog-stage.contain { background: #1c1712; aspect-ratio: 1 / 1; }
+.dialog-stage.contain img { object-fit: contain; }
 .dialog-thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; }
 .dialog-thumbs button { position: relative; padding: 0; border: 2px solid transparent; border-radius: 10px; overflow: hidden; background: #000; aspect-ratio: 16 / 9; opacity: .65; transition: opacity .15s, border-color .15s; }
 .dialog-thumbs button[aria-current="true"] { border-color: var(--sky); opacity: 1; }
@@ -385,6 +388,8 @@ h2 { margin: 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.2; letter-spac
 .dialog-info .badge--steam { background: #171a21; color: #c7d5e0; }
 .dialog-info .badge--roblox { background: var(--ink); color: #fff; }
 .dialog-info .badge--stove { background: #ff5a00; color: #fff; }
+.dialog-info .badge--web { background: #2f8f83; color: #fff; }
+.badge--web { background: #2f8f83; color: #fff; }
 .dialog-info .badge--soon { background: var(--cream); color: #6b4a00; }
 .dialog-info .badge--live { background: #d9f7e7; color: #0b5a31; }
 
