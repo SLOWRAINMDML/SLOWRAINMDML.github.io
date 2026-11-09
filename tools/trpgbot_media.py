@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Cover and gallery for the TRPG master bot from the phone screenshots in /tmp/trpgbot/ui (see tools/trpgbot/)."""
+"""Cover and gallery for the TRPG master bot from the phone screenshots in /tmp/trpgbot/final (see tools/trpgbot/)."""
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets/games/trpg-master-bot"
-SHOTS = ["/tmp/trpgbot/ui/scene_check.png", "/tmp/trpgbot/ui/scene_after.png", "/tmp/trpgbot/ui/combat.png"]
+COVER = ["/tmp/trpgbot/final/3_scene.png", "/tmp/trpgbot/final/3b_roll.png", "/tmp/trpgbot/final/4_fight.png"]
+SHOTS = ["/tmp/trpgbot/final/1_builder.png", "/tmp/trpgbot/final/2_party.png", "/tmp/trpgbot/final/3_scene.png",
+         "/tmp/trpgbot/final/3b_roll.png", "/tmp/trpgbot/final/4_fight.png"]
 BG = (28, 23, 18)  # the app's theme colour
 
 
@@ -45,8 +47,10 @@ def cover(shots, size=(1232, 693)):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    for old in OUT.glob("shot-*.webp"):
+        old.unlink()
+    cover([Image.open(p).convert("RGB") for p in COVER]).save(OUT / "cover.webp", "WEBP", quality=86, method=6)
     shots = [Image.open(p).convert("RGB") for p in SHOTS]
-    cover(shots).save(OUT / "cover.webp", "WEBP", quality=86, method=6)
     for i, shot in enumerate(shots, 1):
         shot.resize((720, round(shot.height * 720 / shot.width)), Image.LANCZOS).save(OUT / f"shot-{i}.webp", "WEBP", quality=84, method=6)
     print(f"{OUT.relative_to(ROOT)}: cover + {len(shots)} shots")

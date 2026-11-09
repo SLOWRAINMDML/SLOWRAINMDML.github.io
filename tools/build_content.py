@@ -292,6 +292,8 @@ def build_unreleased(g):
         "poster": optional("poster.webp"),
         "hero": optional("hero.webp"),
         "mediaFit": g.get("mediaFit"),
+        "access": g.get("access"),
+        "request": g.get("request"),
         "gallery": [rel(p) for p in sorted(folder.glob("shot-*.webp"), key=lambda p: int(p.stem.split("-")[1]))],
         "videos": [],
     }

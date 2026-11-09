@@ -382,6 +382,7 @@ h2 { margin: 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.2; letter-spac
 .dialog-highlights li { display: flex; gap: 10px; }
 .dialog-highlights li::before { content: ""; flex: 0 0 auto; width: 8px; height: 8px; margin-top: 8px; background: var(--sky-deep); }
 .dialog-desc { white-space: pre-line; font-size: 14.5px; color: var(--ink-soft); line-height: 1.7; border-top: 1px solid var(--line); padding-top: 16px; }
+.dialog-access { margin: 0; padding: 12px 14px; border-radius: 12px; background: var(--cream); color: #5a4300; font-size: 14.5px; font-weight: 600; line-height: 1.55; }
 .dialog-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 6px; }
 .badge-row .badge { backdrop-filter: none; }
 .dialog-info .badge { background: var(--bg); color: var(--ink-soft); }

@@ -69,33 +69,40 @@
       "id": "trpg-master-bot",
       "platform": "web",
       "platforms": ["web"],
-      "_media": "No public address: images are real screens from tools/trpgbot/ (engine + web client) and tools/trpgbot_media.py.",
+      "_media": "Real screens of the current build from a local offline server: tools/trpgbot/capture.js, then tools/trpgbot_media.py. The public address is NOT shown on the site; people ask for it.",
       "mediaFit": "contain",
       "title": { "ko": "TRPG 마스터봇", "en": "TRPG Master Bot" },
       "tagline": { "ko": "폰 하나로 둘러앉는 판타지 TRPG 테이블", "en": "A fantasy tabletop RPG table everyone joins from their phone" },
       "description": {
-        "ko": "《울타리 너머, 또 다른 모험으로》 룰로 진행하는 TRPG 마스터봇입니다. 판정과 전투, 주문, 성장은 코드가 룰북대로 처리하고, 마스터는 장면을 묘사하며 사건을 이끕니다. 플레이어는 같은 네트워크의 폰으로 접속해 세로형 픽셀 화면에서 말하고, 주사위를 굴리고, 함께 싸웁니다. 룰북 문장은 들어 있지 않으며, 가지고 있는 룰북에서 직접 추출해 씁니다.",
-        "en": "A game-master bot that runs tabletop sessions on the rules of Beyond the Wall and Other Adventures (Korean edition). Code handles checks, combat, spells and advancement by the book, while the master describes scenes and drives events. Players join from phones on the same network and talk, roll and fight on a portrait pixel screen. No rulebook text is included; it is extracted from your own copy."
+        "ko": "《울타리 너머, 또 다른 모험으로》 룰로 진행하는 TRPG 마스터봇입니다. 판정과 전투, 주문, 성장은 코드가 룰북대로 처리하고, 마스터는 장면을 묘사하며 사건을 이끕니다. 로비에서 테이블을 열고 링크를 보내면 일행이 각자 폰으로 들어와 캐릭터를 만들고, 세로형 픽셀 화면에서 말하고, 주사위를 굴리고, 함께 싸웁니다.",
+        "en": "A game-master bot that runs tabletop sessions on the rules of Beyond the Wall and Other Adventures (Korean edition). Code handles checks, combat, spells and advancement by the book, while the master describes scenes and drives events. Open a table in the lobby, send the link, and everyone joins from their own phone to make a character, then talks, rolls and fights on a portrait pixel screen."
       },
       "highlights": {
         "ko": [
-          "판정·전투·주문·성장 규칙을 코드로 구현해, 주사위 결과는 언제나 룰북대로",
-          "최대 4명이 각자 폰으로 접속해 캐릭터를 만들고 함께 모험",
-          "시간과 날씨에 따라 빛과 그림자가 바뀌는 픽셀 지도, 지형을 쓰는 말판 전투",
-          "모험이 끝나면 장별로 다시 읽는 리플레이"
+          "로비에서 테이블을 열고 링크만 보내면 시작. 여러 일행이 따로 플레이",
+          "생애 표를 굴려 만드는 캐릭터, 빈자리는 동료 캐릭터가 채워 혼자서도 출발",
+          "난이도와 길이가 다른 여러 시나리오, 마을과 도시의 가게·흥정·의뢰",
+          "지형과 던전 구조를 쓰는 말판 전투, 주사위와 승리를 축하하는 연출",
+          "캐릭터를 저장해 다음 테이블과 다른 기기에서 이어 하기"
         ],
         "en": [
-          "Checks, combat, spells and advancement in code, so every roll follows the rulebook",
-          "Up to four players join from their own phones, make characters and adventure together",
-          "Pixel maps lit by time of day and weather, and board battles that use the terrain",
-          "A chapter-by-chapter replay of every finished adventure"
+          "Open a table in the lobby and share the link; several groups can play at once",
+          "Roll life tables to make a character; companions fill empty seats, so you can even start alone",
+          "Scenarios of different difficulty and length, plus shops, haggling and quests in towns and cities",
+          "Board battles that use terrain and dungeon layouts, with fanfare for big rolls and victories",
+          "Save your character and carry on at the next table or on another device"
         ]
       },
+      "access": {
+        "ko": "지금 테스트 중입니다. 현재 접속 주소와 입장 코드는 이메일이나 DM(X · 인스타그램 · 스레드 · 디스코드)으로 요청해 주세요.",
+        "en": "Now in testing. Ask for the current address and access code by email or DM (X, Instagram, Threads or Discord)."
+      },
+      "request": { "email": "slowraingames@gmail.com", "subject": { "ko": "TRPG 마스터봇 주소·입장 코드 요청", "en": "TRPG Master Bot: address and access code" } },
       "tags": ["tabletop", "coop"],
-      "status": { "ko": "개발 중", "en": "In development" },
+      "status": { "ko": "테스트 중", "en": "In testing" },
       "facts": {
-        "ko": ["모바일 웹 (같은 네트워크)", "1~4인 협동", "한국어"],
-        "en": ["Mobile web (same network)", "1–4 players, co-op", "Korean"]
+        "ko": ["모바일 웹 (주소는 요청 시 안내)", "1~4인 협동", "한국어"],
+        "en": ["Mobile web (address on request)", "1–4 players, co-op", "Korean"]
       }
     },
     { "id": "lantern-troupe", "platform": "roblox", "universeId": 10771710255, "placeId": 125399513722362, "repo": "lantern-troupe", "tags": ["story", "adventure"],

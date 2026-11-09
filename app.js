@@ -27,7 +27,7 @@ const TEXT = {
     "footer.rights": "All rights reserved.",
     "footer.note": "Roblox와 Steam은 각 소유자의 상표입니다.",
     playRoblox: "Roblox에서 플레이", wishlist: "Steam에서 찜하기", play: "플레이", wish: "찜하기",
-    follow: "출시 소식 받기", followShort: "소식 받기",
+    follow: "출시 소식 받기", followShort: "소식 받기", request: "주소·입장 코드 요청", requestShort: "입장 요청",
     details: "자세히 보기", live: "지금 플레이", players: n => `서버 최대 ${n}명`,
     released: d => `${d} 공개`, close: "닫기", pause: "자동 넘김 멈춤", resume: "자동 넘김 재생",
     prev: "이전", next: "다음", openGame: t => `${t} 자세히 보기`,
@@ -55,7 +55,7 @@ const TEXT = {
     "footer.rights": "All rights reserved.",
     "footer.note": "Roblox and Steam are trademarks of their respective owners.",
     playRoblox: "Play on Roblox", wishlist: "Wishlist on Steam", play: "Play", wish: "Wishlist",
-    follow: "Get release news", followShort: "Follow",
+    follow: "Get release news", followShort: "Follow", request: "Ask for the address & code", requestShort: "Ask to join",
     details: "Details", live: "Play now", players: n => `Up to ${n} per server`,
     released: d => `Out ${d}`, close: "Close", pause: "Pause slideshow", resume: "Play slideshow",
     prev: "Previous", next: "Next", openGame: t => `More about ${t}`,
@@ -119,6 +119,7 @@ function badges(game) {
 
 function ctaLabel(game, short) {
   if (game.platform === "roblox") return short ? t("play") : t("playRoblox");
+  if (game.request) return short ? t("requestShort") : t("request");
   if (game.url) return short ? t("wish") : t("wishlist");
   return short ? t("followShort") : t("follow");   // no store page yet: point at the news links
 }
@@ -130,11 +131,15 @@ function ctaIcon(game) {
 
 // Store link, or the on-page contact section for a game without a store page yet.
 function ctaAttrs(game) {
+  if (game.request) {
+    const subject = encodeURIComponent(pick(game.request.subject));
+    return `href="mailto:${esc(game.request.email)}?subject=${subject}"`;
+  }
   return game.url ? `href="${esc(game.url)}" target="_blank" rel="noopener"` : 'href="#contact" data-to-contact';
 }
 
 function ctaButton(game) {
-  return `<a class="pixel-button ${isPC(game) ? "steam" : "sky"}" ${ctaAttrs(game)}>${ctaIcon(game)}${esc(ctaLabel(game))} <span aria-hidden="true">${game.url ? "↗" : "↓"}</span></a>`;
+  return `<a class="pixel-button ${isPC(game) ? "steam" : "sky"}" ${ctaAttrs(game)}>${ctaIcon(game)}${esc(ctaLabel(game))} <span aria-hidden="true">${game.url || game.request ? "↗" : "↓"}</span></a>`;
 }
 
 // ---------- Loading ----------
@@ -316,7 +321,7 @@ function renderFilters() {
 
 function cardHTML(game, index) {
   const tags = `<div class="tags">${game.tags.map(tag => `<span class="tag">${esc(t("tags")[tag] || tag)}</span>`).join("")}</div>`;
-  const play = `<a class="play-link" ${ctaAttrs(game)} aria-label="${esc(ctaLabel(game))}: ${esc(pick(game.title))}">${ctaIcon(game)}${esc(ctaLabel(game, true))} ${game.url ? "↗" : "↓"}</a>`;
+  const play = `<a class="play-link" ${ctaAttrs(game)} aria-label="${esc(ctaLabel(game))}: ${esc(pick(game.title))}">${ctaIcon(game)}${esc(ctaLabel(game, true))} ${game.url || game.request ? "↗" : "↓"}</a>`;
   const open = `<button class="card-hit" type="button" data-open="${esc(game.id)}" aria-label="${esc(t("openGame")(pick(game.title)))}"></button>`;
   const delay = `style="animation-delay:${Math.min(index, 12) * 40}ms"`;
   const alt = game.gallery?.[1] && !isPC(game) ? `<img class="alt" src="${esc(game.gallery[1])}" alt="" loading="lazy">` : "";
@@ -424,7 +429,11 @@ function fillDialog(game) {
   $("#dialog-highlights").hidden = !highlights.length;
   $("#dialog-highlights").innerHTML = highlights.map(h => `<li>${esc(h)}</li>`).join("");
   $("#dialog-desc").textContent = pick(game.description);
-  $("#dialog-actions").innerHTML = ctaButton(game);
+  $("#dialog-access").hidden = !game.access;
+  $("#dialog-access").textContent = pick(game.access);
+  $("#dialog-actions").innerHTML = ctaButton(game) + (game.request
+    ? `<a class="pixel-button roblox" href="#contact" data-to-contact>${esc(state.lang === "ko" ? "DM 채널 보기" : "DM channels")} <span aria-hidden="true">↓</span></a>`
+    : "");
 }
 
 function openDialog(id, fromHash) {
