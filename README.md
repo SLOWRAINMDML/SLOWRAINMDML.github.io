@@ -15,7 +15,7 @@ https://slowrainmdml.github.io/ — SLOWRAIN GAMES의 Steam·Roblox 게임 쇼�
    Steam 게임은 실제 스토어 페이지에서 메인 캡슐·스크린샷·설명 영상을 받아 오고, 배너(`hero.webp`)와 세로 카드(`poster.webp`)는
    스토어 헤더와 같은 게임 렌더(`SRPG_STD/tools/build_steam_header_ingame_20261014.py`, 복셀 성 + 아드리안·세라)로 만든다. 그림 일러스트 캡슐은 쓰지 않는다.
    Seedborne Chronicle은 STOVE에 출시됐다(2026-11). `url`·`cta`(STOVE에서 구매하기)·`statusKind: live`를 쓰고, 이미지는 `python3 tools/seedborne_media.py`가
-   STOVE 페이지의 키아트·스크린샷과 Steam 키트의 배너·로고·1080p 장면으로 만든다. Steam 페이지가 공개되면 `steamAppId` 5578430을 넣는다.
+   STOVE 페이지의 키아트·스크린샷과 Steam 키트의 배너·로고·1080p 장면으로 만든다. Steam(5578430, 12-08 출시)은 `links`로 "Steam에서 찜하기"를 단다(`steamAppId`는 TDD 전용 경로라 쓰지 않는다).
    공개 주소가 없는 프로젝트(TRPG 마스터봇, `platform: web`)도 같은 방식이다. 화면은 `tools/trpgbot/`(실제 엔진 + 실제 웹 화면) → `python3 tools/trpgbot_media.py`.
 3. 화면에 픽셀 폰트로 그리는 글자가 바뀌었으면 `python3 tools/build_brand.py` (Galmuri 서브셋, 로고, 파비콘, 공유 이미지 `assets/brand/og.png`).
 4. 로컬 확인: `python3 -m http.server 8791` → http://127.0.0.1:8791/ (8765는 이 Mac의 TRPG 서비스가 쓴다)

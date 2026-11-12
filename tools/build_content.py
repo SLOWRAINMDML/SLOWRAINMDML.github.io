@@ -287,6 +287,7 @@ def build_unreleased(g):
         "facts": g["facts"],
         "url": g.get("url"),
         "cta": g.get("cta"),
+        "links": g.get("links"),
         "statusKind": g.get("statusKind"),
         "icon": None,
         "logo": optional("logo.webp"),

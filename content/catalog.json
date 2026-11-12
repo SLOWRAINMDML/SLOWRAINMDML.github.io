@@ -68,7 +68,7 @@
         "stove",
         "steam"
       ],
-      "_media": "Official store art: STOVE key art + STOVE screenshots, Steam kit library hero/logo/1080p shots (tools/seedborne_media.py).",
+      "_media": "Official store art: STOVE key art + STOVE screenshots, Steam main capsule, Steam kit library hero/logo/1080p shots (tools/seedborne_media.py). Steam app 5578430 is linked via `links`, not steamAppId (build_steam is TDD-specific).",
       "title": {
         "ko": "Seedborne Chronicle",
         "en": "Seedborne Chronicle"
@@ -78,8 +78,8 @@
         "en": "A world born from a seed, a chronicle of generations"
       },
       "description": {
-        "ko": "시드에서 시작해 세대로 이어지는 나만의 모험. 마을과 던전을 탐험하고, 동료와 함께 싸우며 세계의 이야기를 쌓아 가는 싱글 플레이어 RPG입니다. 시드 하나에서 대륙 하나가 자라나고, 마을에 집을 마련해 꾸미고 밭과 가축을 돌보며, 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다. 지금 STOVE에서 만날 수 있고, Steam 출시도 준비하고 있습니다.",
-        "en": "Your own adventure, from a single seed across generations. Explore towns and dungeons, fight alongside your companions and build up the story of your world in this single-player RPG. A continent grows from one seed; buy a home to furnish, tend fields and raise animals, and when your adventurer retires an heir carries the chronicle on. Out now on STOVE, with a Steam release on the way."
+        "ko": "시드에서 시작해 세대로 이어지는 나만의 모험. 마을과 던전을 탐험하고, 동료와 함께 싸우며 세계의 이야기를 쌓아 가는 싱글 플레이어 RPG입니다. 시드 하나에서 대륙 하나가 자라나고, 마을에 집을 마련해 꾸미고 밭과 가축을 돌보며, 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다. 지금 STOVE에서 만날 수 있고, Steam에는 2026년 12월 8일에 출시합니다.",
+        "en": "Your own adventure, from a single seed across generations. Explore towns and dungeons, fight alongside your companions and build up the story of your world in this single-player RPG. A continent grows from one seed; buy a home to furnish, tend fields and raise animals, and when your adventurer retires an heir carries the chronicle on. Out now on STOVE, and coming to Steam on 8 December 2026."
       },
       "highlights": {
         "ko": [
@@ -101,18 +101,20 @@
         "cozy"
       ],
       "status": {
-        "ko": "STOVE 출시 · Steam 준비 중",
-        "en": "Out on STOVE · Steam soon"
+        "ko": "STOVE 출시 · Steam 12월 8일",
+        "en": "Out on STOVE · Steam Dec 8"
       },
       "facts": {
         "ko": [
           "₩9,900 (STOVE)",
+          "Steam 2026.12.08 출시 예정",
           "Windows (PC)",
           "한국어 · English · 日本語 · 简体中文 · 繁體中文",
           "싱글 플레이"
         ],
         "en": [
           "₩9,900 on STOVE",
+          "On Steam 8 Dec 2026",
           "Windows (PC)",
           "Korean · English · Japanese · Simplified & Traditional Chinese",
           "Single-player"
@@ -130,7 +132,17 @@
           "en": "Buy"
         }
       },
-      "statusKind": "live"
+      "statusKind": "live",
+      "links": [
+        {
+          "store": "steam",
+          "url": "https://store.steampowered.com/app/5578430/",
+          "label": {
+            "ko": "Steam에서 찜하기",
+            "en": "Wishlist on Steam"
+          }
+        }
+      ]
     },
     {
       "id": "trpg-master-bot",

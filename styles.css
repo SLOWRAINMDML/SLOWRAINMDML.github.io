@@ -103,6 +103,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pixel-button.sky { --bg-btn: var(--sky); --fg-btn: var(--navy); --edge: #1d5fb8; }
 .pixel-button.steam { --bg-btn: #66c0f4; --fg-btn: #0b1a2a; --edge: #2a6b96; }
 .pixel-button.roblox { --bg-btn: #fff; --fg-btn: var(--ink); --edge: #9aa7bd; }
+.pixel-button.stove { --bg-btn: #ff5a00; --fg-btn: #fff; --edge: #a33a00; }
+.pixel-button.stove .stove-mark { background: #fff; color: #ff5a00; }
 .pixel-button.ghost { --bg-btn: rgba(255, 255, 255, .14); --fg-btn: #fff; --edge: rgba(0, 0, 0, .35); backdrop-filter: blur(6px); }
 .pixel-button svg { width: 18px; height: 18px; fill: currentColor; }
 .pixel-button .stove-mark, .play-link .stove-mark { width: 18px; height: 18px; font-size: 11px; border-radius: 4px; }

@@ -140,8 +140,13 @@ function ctaAttrs(game) {
   return game.url ? `href="${esc(game.url)}" target="_blank" rel="noopener"` : 'href="#contact" data-to-contact';
 }
 
+// More stores for the same game, e.g. a Steam wishlist next to "buy on STOVE".
+function extraLinks(game) {
+  return (game.links || []).map(link => `<a class="pixel-button ${link.store === "steam" ? "steam" : "roblox"}" href="${esc(link.url)}" target="_blank" rel="noopener">${link.store === "steam" ? ICON.steam : ""}${esc(pick(link.label))} <span aria-hidden="true">↗</span></a>`).join("");
+}
+
 function ctaButton(game) {
-  return `<a class="pixel-button ${isPC(game) ? "steam" : "sky"}" ${ctaAttrs(game)}>${ctaIcon(game)}${esc(ctaLabel(game))} <span aria-hidden="true">${game.url || game.request ? "↗" : "↓"}</span></a>`;
+  return `<a class="pixel-button ${game.cta && game.cta.store === "stove" ? "stove" : isPC(game) ? "steam" : "sky"}" ${ctaAttrs(game)}>${ctaIcon(game)}${esc(ctaLabel(game))} <span aria-hidden="true">${game.url || game.request ? "↗" : "↓"}</span></a>`;
 }
 
 // ---------- Loading ----------
@@ -200,7 +205,7 @@ function renderSlides() {
           : `<h2 class="slide-title">${esc(pick(game.title))}${state.lang === "ko" && game.title.en !== game.title.ko ? `<span class="sub">${esc(game.title.en)}</span>` : ""}</h2>`}
         <p class="slide-tagline">${esc(pick(game.tagline))}</p>
         <div class="slide-actions">
-          ${ctaButton(game)}
+          ${ctaButton(game)}${extraLinks(game)}
           <button class="pixel-button ghost" type="button" data-open="${esc(game.id)}">${esc(t("details"))}</button>
         </div>
       </div>
@@ -433,7 +438,7 @@ function fillDialog(game) {
   $("#dialog-desc").textContent = pick(game.description);
   $("#dialog-access").hidden = !game.access;
   $("#dialog-access").textContent = pick(game.access);
-  $("#dialog-actions").innerHTML = ctaButton(game) + (game.request
+  $("#dialog-actions").innerHTML = ctaButton(game) + extraLinks(game) + (game.request
     ? `<a class="pixel-button roblox" href="#contact" data-to-contact>${esc(state.lang === "ko" ? "DM 채널 보기" : "DM channels")} <span aria-hidden="true">↓</span></a>`
     : "");
 }
