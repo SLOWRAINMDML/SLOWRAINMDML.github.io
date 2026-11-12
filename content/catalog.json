@@ -1,18 +1,35 @@
 {
   "_comment": "Hand-written game list. tools/build_content.py reads this, pulls names/descriptions/images from Roblox and writes content/games.json. Edit here, then run the tool.",
-  "featured": ["tactics-devil-dungeon", "seedborne-chronicle", "lantern-troupe", "sky-bounty", "galaxy-bounty", "burp-orchestra", "moldy-pets-lab", "road-home"],
+  "featured": [
+    "seedborne-chronicle",
+    "tactics-devil-dungeon",
+    "lantern-troupe",
+    "sky-bounty",
+    "galaxy-bounty",
+    "burp-orchestra",
+    "moldy-pets-lab",
+    "road-home"
+  ],
   "games": [
     {
       "id": "tactics-devil-dungeon",
       "platform": "pc",
-      "platforms": ["steam"],
+      "platforms": [
+        "steam"
+      ],
       "steamAppId": 5391060,
-      "title": { "ko": "Tactics to the devil dungeon", "en": "Tactics to the devil dungeon" },
+      "title": {
+        "ko": "Tactics to the devil dungeon",
+        "en": "Tactics to the devil dungeon"
+      },
       "tagline": {
         "ko": "사거리·고저차·지형이 승패를 가르는 다크 판타지 턴제 전술 RPG",
         "en": "A dark fantasy turn-based tactics RPG where range, elevation and terrain decide the fight"
       },
-      "tags": ["tactics", "story"],
+      "tags": [
+        "tactics",
+        "story"
+      ],
       "highlights": {
         "ko": [
           "전투 100개와 이야기 2개로 이어지는 102개 스테이지 캠페인, 마을 15곳",
@@ -27,22 +44,42 @@
           "Fire spreads, water soaks, ice blocks the route: terrain and status effects chain together"
         ]
       },
-      "status": { "ko": "2027년 출시 예정", "en": "Coming 2027" },
+      "status": {
+        "ko": "2027년 출시 예정",
+        "en": "Coming 2027"
+      },
       "facts": {
-        "ko": ["Windows (PC)", "한국어 · English · 日本語 · 简体中文", "싱글 플레이"],
-        "en": ["Windows (PC)", "Korean · English · Japanese · Simplified Chinese", "Single-player"]
+        "ko": [
+          "Windows (PC)",
+          "한국어 · English · 日本語 · 简体中文",
+          "싱글 플레이"
+        ],
+        "en": [
+          "Windows (PC)",
+          "Korean · English · Japanese · Simplified Chinese",
+          "Single-player"
+        ]
       }
     },
     {
       "id": "seedborne-chronicle",
       "platform": "pc",
-      "platforms": ["steam", "stove"],
-      "_media": "No store page yet: images come from tools/seedborne_media.py (captures of the Godot build).",
-      "title": { "ko": "Seedborne Chronicle", "en": "Seedborne Chronicle" },
-      "tagline": { "ko": "씨앗에서 태어난 세계의 연대기", "en": "A world born from a seed, a chronicle of generations" },
+      "platforms": [
+        "stove",
+        "steam"
+      ],
+      "_media": "Official store art: STOVE key art + STOVE screenshots, Steam kit library hero/logo/1080p shots (tools/seedborne_media.py).",
+      "title": {
+        "ko": "Seedborne Chronicle",
+        "en": "Seedborne Chronicle"
+      },
+      "tagline": {
+        "ko": "씨앗에서 태어난 세계의 연대기",
+        "en": "A world born from a seed, a chronicle of generations"
+      },
       "description": {
-        "ko": "시드 하나에서 대륙 하나가 자라납니다. 마을에서 의뢰를 받고, 미궁을 탐험하고, 동료와 함께 턴제 전투를 치르세요. 마을에 집을 마련해 가구를 들이고 밭과 가축을 돌보는 생활도 기다립니다. 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다.",
-        "en": "Every world grows from a seed. Take requests in town, explore labyrinths and fight turn-based battles alongside your companions. Buy a home to furnish, tend the fields and raise animals. When your adventurer retires, an heir carries the chronicle on."
+        "ko": "시드에서 시작해 세대로 이어지는 나만의 모험. 마을과 던전을 탐험하고, 동료와 함께 싸우며 세계의 이야기를 쌓아 가는 싱글 플레이어 RPG입니다. 시드 하나에서 대륙 하나가 자라나고, 마을에 집을 마련해 꾸미고 밭과 가축을 돌보며, 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다. 지금 STOVE에서 만날 수 있고, Steam 출시도 준비하고 있습니다.",
+        "en": "Your own adventure, from a single seed across generations. Explore towns and dungeons, fight alongside your companions and build up the story of your world in this single-player RPG. A continent grows from one seed; buy a home to furnish, tend fields and raise animals, and when your adventurer retires an heir carries the chronicle on. Out now on STOVE, with a Steam release on the way."
       },
       "highlights": {
         "ko": [
@@ -58,21 +95,59 @@
           "Retire, and your heir takes over: a chronicle across generations"
         ]
       },
-      "tags": ["rpg", "adventure", "cozy"],
-      "status": { "ko": "출시 준비 중", "en": "Coming soon" },
+      "tags": [
+        "rpg",
+        "adventure",
+        "cozy"
+      ],
+      "status": {
+        "ko": "STOVE 출시 · Steam 준비 중",
+        "en": "Out on STOVE · Steam soon"
+      },
       "facts": {
-        "ko": ["Windows (PC)", "한국어 · English · 日本語 · 简体中文 · 繁體中文", "싱글 플레이"],
-        "en": ["Windows (PC)", "Korean · English · Japanese · Simplified & Traditional Chinese", "Single-player"]
-      }
+        "ko": [
+          "₩9,900 (STOVE)",
+          "Windows (PC)",
+          "한국어 · English · 日本語 · 简体中文 · 繁體中文",
+          "싱글 플레이"
+        ],
+        "en": [
+          "₩9,900 on STOVE",
+          "Windows (PC)",
+          "Korean · English · Japanese · Simplified & Traditional Chinese",
+          "Single-player"
+        ]
+      },
+      "url": "https://store.onstove.com/ko/games/106576",
+      "cta": {
+        "store": "stove",
+        "label": {
+          "ko": "STOVE에서 구매하기",
+          "en": "Buy on STOVE"
+        },
+        "short": {
+          "ko": "구매하기",
+          "en": "Buy"
+        }
+      },
+      "statusKind": "live"
     },
     {
       "id": "trpg-master-bot",
       "platform": "web",
-      "platforms": ["web"],
+      "platforms": [
+        "web"
+      ],
       "_media": "Real screens of the current build from a local offline server: tools/trpgbot/capture.js, then tools/trpgbot_media.py. The public address is NOT shown on the site; people ask for it.",
       "mediaFit": "contain",
-      "title": { "ko": "TRPG 마스터봇", "en": "TRPG Master Bot" },
-      "tagline": { "ko": "폰 하나로 둘러앉는 판타지 TRPG 테이블", "en": "A fantasy tabletop RPG table everyone joins from their phone" },
+      "title": {
+        "ko": "TRPG 마스터봇",
+        "en": "TRPG Master Bot"
+      },
+      "tagline": {
+        "ko": "폰 하나로 둘러앉는 판타지 TRPG 테이블",
+        "en": "A fantasy tabletop RPG table everyone joins from their phone"
+      },
       "description": {
         "ko": "《울타리 너머, 또 다른 모험으로》 룰로 진행하는 TRPG 마스터봇입니다. 판정과 전투, 주문, 성장은 코드가 룰북대로 처리하고, 마스터는 장면을 묘사하며 사건을 이끕니다. 로비에서 테이블을 열고 링크를 보내면 일행이 각자 폰으로 들어와 캐릭터를 만들고, 세로형 픽셀 화면에서 말하고, 주사위를 굴리고, 함께 싸웁니다.",
         "en": "A game-master bot that runs tabletop sessions on the rules of Beyond the Wall and Other Adventures (Korean edition). Code handles checks, combat, spells and advancement by the book, while the master describes scenes and drives events. Open a table in the lobby, send the link, and everyone joins from their own phone to make a character, then talks, rolls and fights on a portrait pixel screen."
@@ -97,56 +172,340 @@
         "ko": "지금 테스트 중입니다. 현재 접속 주소와 입장 코드는 이메일이나 DM(X · 인스타그램 · 스레드 · 디스코드)으로 요청해 주세요.",
         "en": "Now in testing. Ask for the current address and access code by email or DM (X, Instagram, Threads or Discord)."
       },
-      "request": { "email": "slowraingames@gmail.com", "subject": { "ko": "TRPG 마스터봇 주소·입장 코드 요청", "en": "TRPG Master Bot: address and access code" } },
-      "tags": ["tabletop", "coop"],
-      "status": { "ko": "테스트 중", "en": "In testing" },
+      "request": {
+        "email": "slowraingames@gmail.com",
+        "subject": {
+          "ko": "TRPG 마스터봇 주소·입장 코드 요청",
+          "en": "TRPG Master Bot: address and access code"
+        }
+      },
+      "tags": [
+        "tabletop",
+        "coop"
+      ],
+      "status": {
+        "ko": "테스트 중",
+        "en": "In testing"
+      },
       "facts": {
-        "ko": ["모바일 웹 (주소는 요청 시 안내)", "1~4인 협동", "한국어"],
-        "en": ["Mobile web (address on request)", "1–4 players, co-op", "Korean"]
+        "ko": [
+          "모바일 웹 (주소는 요청 시 안내)",
+          "1~4인 협동",
+          "한국어"
+        ],
+        "en": [
+          "Mobile web (address on request)",
+          "1–4 players, co-op",
+          "Korean"
+        ]
       }
     },
-    { "id": "lantern-troupe", "platform": "roblox", "universeId": 10771710255, "placeId": 125399513722362, "repo": "lantern-troupe", "tags": ["story", "adventure"],
-      "tagline": { "ko": "세 번 울리는 종의 비밀을 쫓는 유랑극단 이야기", "en": "A travelling troupe follows the secret of the thrice-rung bell" } },
-    { "id": "galaxy-bounty", "platform": "roblox", "universeId": 10771474129, "placeId": 120958892028671, "repo": "galaxy-bounty", "tags": ["adventure", "action"],
-      "tagline": { "ko": "반짝이는 은하를 누비며 우주 해적을 쫓아라!", "en": "Chase space pirates across a bright, colourful galaxy!" } },
-    { "id": "silly-house", "platform": "roblox", "universeId": 10770778443, "placeId": 126888997151936, "repo": "silly-house", "tags": ["cozy", "puzzle"],
-      "tagline": { "ko": "집은 쉽게, 검사는 엉뚱하게!", "en": "Easy building, silly inspections!" } },
-    { "id": "road-home", "platform": "roblox", "universeId": 10769842132, "placeId": 71935639249849, "repo": "road-home", "tags": ["cozy", "adventure"],
-      "tagline": { "ko": "마음에 드는 곳이 곧 집이 되는 캠핑카 여행", "en": "A camper-van journey where anywhere you like becomes home" } },
-    { "id": "close-the-fridge", "platform": "roblox", "universeId": 10769813890, "placeId": 94425926835062, "repo": "close-the-fridge", "tags": ["puzzle", "cozy"],
-      "tagline": { "ko": "장을 조금 봤을 뿐인데 냉장고 문이 안 닫혀요!", "en": "I only bought a little… so why won't the fridge close?!" } },
-    { "id": "sky-bounty", "platform": "roblox", "universeId": 10769578445, "placeId": 138074884956875, "repo": "sky-bounty", "tags": ["adventure", "action"],
-      "tagline": { "ko": "구름 바다를 누비며 하늘 해적을 쫓아라!", "en": "Chase sky pirates across an open sea of clouds!" } },
-    { "id": "bread-escape", "platform": "roblox", "universeId": 10769489629, "placeId": 73480943158059, "repo": "bread-escape", "tags": ["coop", "cozy"],
-      "tagline": { "ko": "잘 구운 빵일수록 도망도 잘 간다!", "en": "The better you bake it, the faster it runs!" } },
-    { "id": "one-umbrella", "platform": "roblox", "universeId": 10769475974, "placeId": 102943916030659, "repo": "one-umbrella", "tags": ["action"],
-      "tagline": { "ko": "우산 하나로 말도 안 되는 날씨를 건너라!", "en": "Cross the craziest weather with ONE umbrella!" } },
-    { "id": "suspicious-returns", "platform": "roblox", "universeId": 10769470629, "placeId": 84749106453325, "repo": "suspicious-returns", "tags": ["puzzle", "coop"],
-      "tagline": { "ko": "고객님, 이건 반품이 아니라 탈주입니다.", "en": "Ma'am, this isn't a return. It's an escape." } },
-    { "id": "burp-orchestra", "platform": "roblox", "universeId": 10768965580, "placeId": 134235459867003, "repo": "burp-orchestra", "tags": ["rhythm", "coop"],
-      "tagline": { "ko": "가장 품격 없는 악기로, 가장 품격 있는 공연을.", "en": "The least dignified instrument. The most dignified concert." } },
-    { "id": "crumb-crew", "platform": "roblox", "universeId": 10768967566, "placeId": 88478610329836, "repo": "crumb-crew", "tags": ["coop", "action"],
-      "tagline": { "ko": "한 입만 더. 진짜 마지막 한 입.", "en": "Just one more bite. Really, the last one." } },
-    { "id": "junk-tub-voyage", "platform": "roblox", "universeId": 10768952927, "placeId": 139653389206341, "repo": "junk-tub-voyage", "tags": ["coop", "adventure"],
-      "tagline": { "ko": "세상에서 가장 우스운 배로, 가장 멋진 항해를.", "en": "The silliest boat ever. The best voyage ever." } },
-    { "id": "moldy-pets-lab", "platform": "roblox", "universeId": 10768952947, "placeId": 125254293304762, "repo": "moldy-pets-lab", "tags": ["cozy"],
-      "tagline": { "ko": "버리려던 식빵이 나를 따라온다!", "en": "The old toast you were about to throw away is following you!" } },
-    { "id": "sewer-salvage", "platform": "roblox", "universeId": 10768947500, "placeId": 76820412631101, "repo": "sewer-salvage", "tags": ["cozy", "coop"],
-      "tagline": { "ko": "맨홀 아래에서 가장 예쁜 보물이 올라온다!", "en": "The prettiest treasures come up from under the manholes!" } },
-    { "id": "dont-sneeze", "platform": "roblox", "universeId": 10768945635, "placeId": 95697160375175, "repo": "dont-sneeze", "tags": ["puzzle", "action"],
-      "tagline": { "ko": "들키지 않을 순간을 골라, 에취!", "en": "Pick the moment nobody can hear you — ACHOO!" } },
-    { "id": "oops-cleaning-co", "platform": "roblox", "universeId": 10768784458, "placeId": 71290572011246, "repo": "oops-cleaning-co", "tags": ["coop", "action"],
-      "tagline": { "ko": "청소는 화려하게. 사고는 우아하게.", "en": "Clean with style. Fail with grace." } },
-    { "id": "not-my-sock", "platform": "roblox", "universeId": 10768708281, "placeId": 99181276410872, "repo": "not-my-sock", "tags": ["versus"],
-      "tagline": { "ko": "터지기 전에, 냄새나는 양말을 넘겨라!", "en": "Pass the stinky sock before it goes POOF!" } },
-    { "id": "booger-roll", "platform": "roblox", "universeId": 10768684329, "placeId": 116423882888970, "repo": "booger-roll", "tags": ["adventure", "cozy"],
-      "tagline": { "ko": "굴리면 굴릴수록 세상이 달라붙는다!", "en": "The more it rolls, the more the world sticks to it!" } },
-    { "id": "plunger-brawl", "platform": "roblox", "universeId": 10768561799, "placeId": 102749947306107, "repo": "plunger-battle", "tags": ["versus", "action"],
-      "title": { "ko": "뚫어뻥 쟁탈전", "en": "PLUNGER BRAWL" },
-      "tagline": { "ko": "붙이고! 당기고! 비누는 내 바구니로!", "en": "Stick! Pull! Get the soap into YOUR basket!" } },
-    { "id": "fart-delivery", "platform": "roblox", "universeId": 10768532739, "placeId": 121416044460974, "repo": "FART-DELIVERY", "tags": ["action"],
-      "title": { "ko": "방귀 택배", "en": "FART DELIVERY" },
-      "description": { "en": "📦 Deliver first, land later!\n\nCharge a fart boost, launch across the toy town of Fartville and drop parcels in the right mailbox. Solo or with up to 50 couriers.\n\n• Hold the boost button to charge, let go to launch. The harder you blast, the farther you fly… but the landing is up to you.\n• Six parcel types: regular, floaty balloon, fragile cake, runaway box, sticky slime and a chilled parcel that has to arrive before it melts.\n• Take rooftop shortcuts, go for mailbox trick shots and rooftop drops for achievements.\n• Dropped it? No problem. Free return to the post office.\n\nPaid fart effects only change shape and colour; speed, gas and rewards stay the same for everyone." },
-      "tagline": { "ko": "배송 먼저, 착지는 나중에!", "en": "Deliver first, land later!" } }
+    {
+      "id": "lantern-troupe",
+      "platform": "roblox",
+      "universeId": 10771710255,
+      "placeId": 125399513722362,
+      "repo": "lantern-troupe",
+      "tags": [
+        "story",
+        "adventure"
+      ],
+      "tagline": {
+        "ko": "세 번 울리는 종의 비밀을 쫓는 유랑극단 이야기",
+        "en": "A travelling troupe follows the secret of the thrice-rung bell"
+      }
+    },
+    {
+      "id": "galaxy-bounty",
+      "platform": "roblox",
+      "universeId": 10771474129,
+      "placeId": 120958892028671,
+      "repo": "galaxy-bounty",
+      "tags": [
+        "adventure",
+        "action"
+      ],
+      "tagline": {
+        "ko": "반짝이는 은하를 누비며 우주 해적을 쫓아라!",
+        "en": "Chase space pirates across a bright, colourful galaxy!"
+      }
+    },
+    {
+      "id": "silly-house",
+      "platform": "roblox",
+      "universeId": 10770778443,
+      "placeId": 126888997151936,
+      "repo": "silly-house",
+      "tags": [
+        "cozy",
+        "puzzle"
+      ],
+      "tagline": {
+        "ko": "집은 쉽게, 검사는 엉뚱하게!",
+        "en": "Easy building, silly inspections!"
+      }
+    },
+    {
+      "id": "road-home",
+      "platform": "roblox",
+      "universeId": 10769842132,
+      "placeId": 71935639249849,
+      "repo": "road-home",
+      "tags": [
+        "cozy",
+        "adventure"
+      ],
+      "tagline": {
+        "ko": "마음에 드는 곳이 곧 집이 되는 캠핑카 여행",
+        "en": "A camper-van journey where anywhere you like becomes home"
+      }
+    },
+    {
+      "id": "close-the-fridge",
+      "platform": "roblox",
+      "universeId": 10769813890,
+      "placeId": 94425926835062,
+      "repo": "close-the-fridge",
+      "tags": [
+        "puzzle",
+        "cozy"
+      ],
+      "tagline": {
+        "ko": "장을 조금 봤을 뿐인데 냉장고 문이 안 닫혀요!",
+        "en": "I only bought a little… so why won't the fridge close?!"
+      }
+    },
+    {
+      "id": "sky-bounty",
+      "platform": "roblox",
+      "universeId": 10769578445,
+      "placeId": 138074884956875,
+      "repo": "sky-bounty",
+      "tags": [
+        "adventure",
+        "action"
+      ],
+      "tagline": {
+        "ko": "구름 바다를 누비며 하늘 해적을 쫓아라!",
+        "en": "Chase sky pirates across an open sea of clouds!"
+      }
+    },
+    {
+      "id": "bread-escape",
+      "platform": "roblox",
+      "universeId": 10769489629,
+      "placeId": 73480943158059,
+      "repo": "bread-escape",
+      "tags": [
+        "coop",
+        "cozy"
+      ],
+      "tagline": {
+        "ko": "잘 구운 빵일수록 도망도 잘 간다!",
+        "en": "The better you bake it, the faster it runs!"
+      }
+    },
+    {
+      "id": "one-umbrella",
+      "platform": "roblox",
+      "universeId": 10769475974,
+      "placeId": 102943916030659,
+      "repo": "one-umbrella",
+      "tags": [
+        "action"
+      ],
+      "tagline": {
+        "ko": "우산 하나로 말도 안 되는 날씨를 건너라!",
+        "en": "Cross the craziest weather with ONE umbrella!"
+      }
+    },
+    {
+      "id": "suspicious-returns",
+      "platform": "roblox",
+      "universeId": 10769470629,
+      "placeId": 84749106453325,
+      "repo": "suspicious-returns",
+      "tags": [
+        "puzzle",
+        "coop"
+      ],
+      "tagline": {
+        "ko": "고객님, 이건 반품이 아니라 탈주입니다.",
+        "en": "Ma'am, this isn't a return. It's an escape."
+      }
+    },
+    {
+      "id": "burp-orchestra",
+      "platform": "roblox",
+      "universeId": 10768965580,
+      "placeId": 134235459867003,
+      "repo": "burp-orchestra",
+      "tags": [
+        "rhythm",
+        "coop"
+      ],
+      "tagline": {
+        "ko": "가장 품격 없는 악기로, 가장 품격 있는 공연을.",
+        "en": "The least dignified instrument. The most dignified concert."
+      }
+    },
+    {
+      "id": "crumb-crew",
+      "platform": "roblox",
+      "universeId": 10768967566,
+      "placeId": 88478610329836,
+      "repo": "crumb-crew",
+      "tags": [
+        "coop",
+        "action"
+      ],
+      "tagline": {
+        "ko": "한 입만 더. 진짜 마지막 한 입.",
+        "en": "Just one more bite. Really, the last one."
+      }
+    },
+    {
+      "id": "junk-tub-voyage",
+      "platform": "roblox",
+      "universeId": 10768952927,
+      "placeId": 139653389206341,
+      "repo": "junk-tub-voyage",
+      "tags": [
+        "coop",
+        "adventure"
+      ],
+      "tagline": {
+        "ko": "세상에서 가장 우스운 배로, 가장 멋진 항해를.",
+        "en": "The silliest boat ever. The best voyage ever."
+      }
+    },
+    {
+      "id": "moldy-pets-lab",
+      "platform": "roblox",
+      "universeId": 10768952947,
+      "placeId": 125254293304762,
+      "repo": "moldy-pets-lab",
+      "tags": [
+        "cozy"
+      ],
+      "tagline": {
+        "ko": "버리려던 식빵이 나를 따라온다!",
+        "en": "The old toast you were about to throw away is following you!"
+      }
+    },
+    {
+      "id": "sewer-salvage",
+      "platform": "roblox",
+      "universeId": 10768947500,
+      "placeId": 76820412631101,
+      "repo": "sewer-salvage",
+      "tags": [
+        "cozy",
+        "coop"
+      ],
+      "tagline": {
+        "ko": "맨홀 아래에서 가장 예쁜 보물이 올라온다!",
+        "en": "The prettiest treasures come up from under the manholes!"
+      }
+    },
+    {
+      "id": "dont-sneeze",
+      "platform": "roblox",
+      "universeId": 10768945635,
+      "placeId": 95697160375175,
+      "repo": "dont-sneeze",
+      "tags": [
+        "puzzle",
+        "action"
+      ],
+      "tagline": {
+        "ko": "들키지 않을 순간을 골라, 에취!",
+        "en": "Pick the moment nobody can hear you — ACHOO!"
+      }
+    },
+    {
+      "id": "oops-cleaning-co",
+      "platform": "roblox",
+      "universeId": 10768784458,
+      "placeId": 71290572011246,
+      "repo": "oops-cleaning-co",
+      "tags": [
+        "coop",
+        "action"
+      ],
+      "tagline": {
+        "ko": "청소는 화려하게. 사고는 우아하게.",
+        "en": "Clean with style. Fail with grace."
+      }
+    },
+    {
+      "id": "not-my-sock",
+      "platform": "roblox",
+      "universeId": 10768708281,
+      "placeId": 99181276410872,
+      "repo": "not-my-sock",
+      "tags": [
+        "versus"
+      ],
+      "tagline": {
+        "ko": "터지기 전에, 냄새나는 양말을 넘겨라!",
+        "en": "Pass the stinky sock before it goes POOF!"
+      }
+    },
+    {
+      "id": "booger-roll",
+      "platform": "roblox",
+      "universeId": 10768684329,
+      "placeId": 116423882888970,
+      "repo": "booger-roll",
+      "tags": [
+        "adventure",
+        "cozy"
+      ],
+      "tagline": {
+        "ko": "굴리면 굴릴수록 세상이 달라붙는다!",
+        "en": "The more it rolls, the more the world sticks to it!"
+      }
+    },
+    {
+      "id": "plunger-brawl",
+      "platform": "roblox",
+      "universeId": 10768561799,
+      "placeId": 102749947306107,
+      "repo": "plunger-battle",
+      "tags": [
+        "versus",
+        "action"
+      ],
+      "title": {
+        "ko": "뚫어뻥 쟁탈전",
+        "en": "PLUNGER BRAWL"
+      },
+      "tagline": {
+        "ko": "붙이고! 당기고! 비누는 내 바구니로!",
+        "en": "Stick! Pull! Get the soap into YOUR basket!"
+      }
+    },
+    {
+      "id": "fart-delivery",
+      "platform": "roblox",
+      "universeId": 10768532739,
+      "placeId": 121416044460974,
+      "repo": "FART-DELIVERY",
+      "tags": [
+        "action"
+      ],
+      "title": {
+        "ko": "방귀 택배",
+        "en": "FART DELIVERY"
+      },
+      "description": {
+        "en": "📦 Deliver first, land later!\n\nCharge a fart boost, launch across the toy town of Fartville and drop parcels in the right mailbox. Solo or with up to 50 couriers.\n\n• Hold the boost button to charge, let go to launch. The harder you blast, the farther you fly… but the landing is up to you.\n• Six parcel types: regular, floaty balloon, fragile cake, runaway box, sticky slime and a chilled parcel that has to arrive before it melts.\n• Take rooftop shortcuts, go for mailbox trick shots and rooftop drops for achievements.\n• Dropped it? No problem. Free return to the post office.\n\nPaid fart effects only change shape and colour; speed, gas and rewards stay the same for everyone."
+      },
+      "tagline": {
+        "ko": "배송 먼저, 착지는 나중에!",
+        "en": "Deliver first, land later!"
+      }
+    }
   ]
 }

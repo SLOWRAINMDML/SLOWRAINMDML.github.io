@@ -105,6 +105,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .pixel-button.roblox { --bg-btn: #fff; --fg-btn: var(--ink); --edge: #9aa7bd; }
 .pixel-button.ghost { --bg-btn: rgba(255, 255, 255, .14); --fg-btn: #fff; --edge: rgba(0, 0, 0, .35); backdrop-filter: blur(6px); }
 .pixel-button svg { width: 18px; height: 18px; fill: currentColor; }
+.pixel-button .stove-mark, .play-link .stove-mark { width: 18px; height: 18px; font-size: 11px; border-radius: 4px; }
 
 /* Pixel rain */
 .rain { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 2; }

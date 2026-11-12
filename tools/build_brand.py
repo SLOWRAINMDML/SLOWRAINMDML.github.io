@@ -88,6 +88,8 @@ def build_font():
     data = json.loads((ROOT / "content/games.json").read_text())
     for g in data["games"]:
         text += "".join(g["title"].values()) + "".join((g.get("status") or {}).values())
+        cta = g.get("cta") or {}
+        text += "".join((cta.get("label") or {}).values()) + "".join((cta.get("short") or {}).values())
     text += "".join(chr(c) for c in range(0x20, 0x7F)) + "·…—↗↑←→ⅡⅠ▶"
     chars = "".join(sorted(set(re.sub(r"\s", "", text)) | {" "}))
     for weight, name in (("Regular", "Galmuri11.ttf"), ("Bold", "Galmuri11-Bold.ttf")):

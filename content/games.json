@@ -1,7 +1,7 @@
 {
  "featured": [
-  "tactics-devil-dungeon",
   "seedborne-chronicle",
+  "tactics-devil-dungeon",
   "lantern-troupe",
   "sky-bounty",
   "galaxy-bounty",
@@ -95,8 +95,8 @@
    "id": "seedborne-chronicle",
    "platform": "pc",
    "platforms": [
-    "steam",
-    "stove"
+    "stove",
+    "steam"
    ],
    "title": {
     "ko": "Seedborne Chronicle",
@@ -107,8 +107,8 @@
     "en": "A world born from a seed, a chronicle of generations"
    },
    "description": {
-    "ko": "시드 하나에서 대륙 하나가 자라납니다. 마을에서 의뢰를 받고, 미궁을 탐험하고, 동료와 함께 턴제 전투를 치르세요. 마을에 집을 마련해 가구를 들이고 밭과 가축을 돌보는 생활도 기다립니다. 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다.",
-    "en": "Every world grows from a seed. Take requests in town, explore labyrinths and fight turn-based battles alongside your companions. Buy a home to furnish, tend the fields and raise animals. When your adventurer retires, an heir carries the chronicle on."
+    "ko": "시드에서 시작해 세대로 이어지는 나만의 모험. 마을과 던전을 탐험하고, 동료와 함께 싸우며 세계의 이야기를 쌓아 가는 싱글 플레이어 RPG입니다. 시드 하나에서 대륙 하나가 자라나고, 마을에 집을 마련해 꾸미고 밭과 가축을 돌보며, 모험가가 은퇴하면 후계자가 그 이야기를 이어받습니다. 지금 STOVE에서 만날 수 있고, Steam 출시도 준비하고 있습니다.",
+    "en": "Your own adventure, from a single seed across generations. Explore towns and dungeons, fight alongside your companions and build up the story of your world in this single-player RPG. A continent grows from one seed; buy a home to furnish, tend fields and raise animals, and when your adventurer retires an heir carries the chronicle on. Out now on STOVE, with a Steam release on the way."
    },
    "highlights": {
     "ko": [
@@ -130,22 +130,36 @@
     "cozy"
    ],
    "status": {
-    "ko": "출시 준비 중",
-    "en": "Coming soon"
+    "ko": "STOVE 출시 · Steam 준비 중",
+    "en": "Out on STOVE · Steam soon"
    },
    "facts": {
     "ko": [
+     "₩9,900 (STOVE)",
      "Windows (PC)",
      "한국어 · English · 日本語 · 简体中文 · 繁體中文",
      "싱글 플레이"
     ],
     "en": [
+     "₩9,900 on STOVE",
      "Windows (PC)",
      "Korean · English · Japanese · Simplified & Traditional Chinese",
      "Single-player"
     ]
    },
-   "url": null,
+   "url": "https://store.onstove.com/ko/games/106576",
+   "cta": {
+    "store": "stove",
+    "label": {
+     "ko": "STOVE에서 구매하기",
+     "en": "Buy on STOVE"
+    },
+    "short": {
+     "ko": "구매하기",
+     "en": "Buy"
+    }
+   },
+   "statusKind": "live",
    "icon": null,
    "logo": "assets/games/seedborne-chronicle/logo.webp",
    "cover": "assets/games/seedborne-chronicle/cover.webp",
@@ -222,6 +236,8 @@
     ]
    },
    "url": null,
+   "cta": null,
+   "statusKind": null,
    "icon": null,
    "logo": null,
    "cover": "assets/games/trpg-master-bot/cover.webp",

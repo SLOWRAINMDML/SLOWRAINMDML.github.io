@@ -112,7 +112,7 @@ const PLATFORM_BADGE = {
 function badges(game) {
   const platform = platformsOf(game).map(p => PLATFORM_BADGE[p] || "").join("");
   const status = game.status
-    ? `<span class="badge badge--soon">${esc(pick(game.status))}</span>`
+    ? `<span class="badge badge--${game.statusKind === "live" ? "live" : "soon"}">${esc(pick(game.status))}</span>`
     : `<span class="badge badge--live">${esc(t("live"))}</span>`;
   return platform + status;
 }
@@ -120,12 +120,14 @@ function badges(game) {
 function ctaLabel(game, short) {
   if (game.platform === "roblox") return short ? t("play") : t("playRoblox");
   if (game.request) return short ? t("requestShort") : t("request");
+  if (game.cta) return pick(short ? game.cta.short : game.cta.label);   // e.g. buy on STOVE
   if (game.url) return short ? t("wish") : t("wishlist");
   return short ? t("followShort") : t("follow");   // no store page yet: point at the news links
 }
 
 function ctaIcon(game) {
   if (game.platform === "roblox") return ICON.roblox;
+  if (game.cta) return game.cta.store === "stove" ? '<span class="stove-mark" aria-hidden="true">S</span>' : "";
   return game.url ? ICON.steam : "";
 }
 
